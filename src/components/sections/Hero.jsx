@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import Holofoil from "../widgets/holofoil/Holofoil";
 
 export default function Hero() {
     return (
-        <div className="pt-36 flex justify-start items-center gap-4">
-            <div className="basis-7/12">
+        <div className="pt-24 flex justify-start items-center gap-24">
+            <div className="md:basis-7/12">
                 <h1 className="font-hind font-semibold text-5xl leading-snug text-white">Building better websites for doctors & their patients</h1>
-                <div className="mt-6 flex gap-4">
+                <div className="mt-6 flex gap-8">
                     <Link href="#work">
                         <button className="border border-white/5 rounded pl-4 pr-6 py-3 text-left group">
                             <p className="text-white text-sm">Case study</p>
@@ -27,8 +28,8 @@ export default function Hero() {
                     </Link>
                 </div>
             </div>
-            <div className="basis-5/12 text-white flex justify-center items-center">
-                <p className="border p-8">holofoil card placeholder</p>
+            <div className="basis-5/12 text-white hidden md:flex justify-start items-center">
+                <Holofoil />
             </div>
         </div>
     );
