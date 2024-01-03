@@ -1,17 +1,20 @@
 import Hero from "@/components/sections/Hero";
+import Portfolio from "@/components/sections/Portfolio";
+import Services from "@/components/sections/Services";
+import { services } from "@/lib/cms";
+
 
 export default function Home() {
     return (
         <main>
-            {/* HERO */}
             <div id="hero">
                 <Hero />
             </div>
-            <div id="services">
-                <p className="pt-36 text-white">Services</p>
+            <div id="services" className="pt-60">
+                <Services services={services} />
             </div>
-            <div id="work">
-                <p className="pt-36 text-white">Our Work</p>
+            <div id="work" className="pt-60">
+                <Portfolio />
             </div>
             <div id="innovation">
                 <p className="pt-36 text-white">Innovation</p>

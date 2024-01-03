@@ -3,7 +3,7 @@ import MaxWidth from "../utils/MaxWidth";
 
 export default function Header() {
     return (
-        <header className="font-hind w-full py-4 sticky top-0 backdrop-blur-xl bg-gray-950/50">
+        <header className="font-hind w-full py-3 sticky top-0 z-10 backdrop-blur-xl bg-gray-950/50">
             <MaxWidth>
                 <nav className="flex items-center justify-between">
                     <div className="text-sm text-white font-bold uppercase">

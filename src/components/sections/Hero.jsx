@@ -5,23 +5,23 @@ import Holofoil from "../widgets/holofoil/Holofoil";
 export default function Hero() {
     return (
         <div className="pt-24 flex justify-start items-center gap-24">
-            <div className="md:basis-7/12">
-                <h1 className="font-hind font-semibold text-5xl leading-snug text-white">Building better websites for doctors & their patients</h1>
+            <div className="md:basis-7/12 -mt-8">
+                <h1 className="font-hind font-semibold text-5xl leading-snug text-gray-200">Building better websites for doctors & their patients</h1>
                 <div className="mt-6 flex gap-8">
-                    <Link href="#work">
-                        <button className="border border-white/5 rounded pl-4 pr-6 py-3 text-left group">
-                            <p className="text-white text-sm">Case study</p>
-                            <div className="mt-1 flex gap-6">
-                                <p className="text-gray-600 text-xs">Arnot Health Orthopedics</p>
+                    <Link href="#contact">
+                        <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 bg-[#40507C]/30 text-left group hover:bg-[#40507C]/40 transition duration-300 ease-in-out">
+                            <p className="text-white text-sm">Contact us</p>
+                            <div className="mt-2 flex gap-6">
+                                <p className="text-gray-500 text-xs">We&apos;d love to learn more</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
                         </button>
                     </Link>
-                    <Link href="#contact">
-                        <button className="border border-white/5 rounded pl-4 pr-6 py-3 bg-white/5 text-left group">
-                            <p className="text-white text-sm">Contact us</p>
-                            <div className="mt-1 flex gap-6">
-                                <p className="text-gray-600 text-xs">Submit a quick form</p>
+                    <Link href="#work">
+                        <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 text-left group bg-gray-800/20 hover:bg-gray-800/30 transition duration-300 ease-in-out">
+                            <p className="text-white text-sm">Recent work</p>
+                            <div className="mt-2 flex gap-6">
+                                <p className="text-gray-500 text-xs">Arnot Health Orthopedics</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
                         </button>

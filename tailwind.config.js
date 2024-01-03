@@ -13,8 +13,11 @@ module.exports = {
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
             fontFamily: {
-                inter: ['var(--font-inter)'],
-                hind: ['var(--font-hind)']
+                inter: ["var(--font-inter)"],
+                hind: ["var(--font-hind)"]
+            },
+            borderRadius: {
+                "4xl": "32px",
             }
         },
     },

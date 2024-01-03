@@ -12,7 +12,7 @@ export default function Holofoil(props) {
         perspective = 600,
         radius = 32,
         foregroundImage = '/holofoil/foreground.png',
-        opacity = 0.4,
+        opacity = 0,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,
@@ -34,7 +34,6 @@ export default function Holofoil(props) {
             x: leftX - bounds.width / 2,
             y: topY - bounds.height / 2,
         };
-        const distance = Math.sqrt(center.x ** 2 + center.y ** 2);
 
         setHoloCoordinates({
             mx: (leftX/bounds.width)*100, // 0 -> 100%; (leftX / card width) * 100
@@ -93,11 +92,11 @@ export default function Holofoil(props) {
                     <div className={styles.cursourHighlight}></div>
                     <div className={styles.foil}></div>
 
-                    <div className={`absolute top-0 left-0`}>
+                    <div className="absolute top-0 left-0">
                         <div className="flex flex-col justify-between items-center my-4">
-                            <div className="h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-gray-900"></div>
+                            <div className="h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-black"></div>
                             <div className="flex flex-col items-center">
-                                <Image src={'/holofoil/id-profile.png'} width={128} height={128} alt="id badge profile photo" className="shadow-xl shadow-gray-950/80 overflow-hidden rounded-full" />
+                                <Image src={'/holofoil/id-profile.png'} width={128} height={128} alt="id badge profile photo" className="shadow-xl shadow-gray-950/40 overflow-hidden rounded-full" />
                                 <p className="mt-4 font-bold">Doogie Howser, MD</p>
                                 <p className="mt-1 text-xs font-light text-gray-300">Attending Physician</p>
                             </div>
@@ -113,10 +112,10 @@ export default function Holofoil(props) {
                                     </div>
                                     <div className="flex justify-between">
                                         <p>Phone</p>
-                                        <p>(585) 555-5555</p>
+                                        <p>(555) 555-5555</p>
                                     </div>
                                 </div>
-                                <Image src={'/holofoil/barcode.png'} width={220} height={28} alt="barcode" className="mt-16" />
+                                <Image src={'/holofoil/barcode.png'} width={220} height={28} alt="barcode" className="mt-12" />
                             </div>
                         </div>
                     </div>
