@@ -45,10 +45,54 @@ export const services = [
     },
 ];
 
-export const portfolioNavigation = [
+export const portfolioCards = [
     { id: 0, slug: "navigation", title: "Navigation", icon: "compass" },
     { id: 1, slug: "conditions", title: "Conditions", icon: "plus" },
     { id: 2, slug: "profiles", title: "Profiles", icon: "user" },
     { id: 3, slug: "reviews", title: "Reviews", icon: "star" },
     { id: 4, slug: "photography", title: "Photography", icon: "camera" },
+];
+
+export const portfolioNavigation = [
+    {
+        id: 0,
+        slug: "elbow",
+        title: "Elbow",
+        conditions: [
+            { id: 0, label: "Tendonitis", arthritis: false },
+            { id: 1, label: "Cubital Tunnel Syndrome", arthritis: false },
+        ],
+        skeletonLocation: "top-[0%] left-[0%]",
+    },
+    {
+        id: 1,
+        slug: "hip",
+        title: "Hip",
+        conditions: [
+            { id: 0, label: "Osteoarthritis", arthritis: true },
+            { id: 1, label: "Full Replacement", arthritis: true },
+        ],
+        skeletonLocation: "top-[0%] left-[0%]",
+    },
+    {
+        id: 2,
+        slug: "knee",
+        title: "Knee",
+        conditions: [
+            { id: 0, label: "ACL Tear", arthritis: false },
+            { id: 1, label: "Full Replacement", arthritis: true },
+        ],
+        skeletonLocation: "top-[0%] left-[0%]",
+    },
+    {
+        id: 2,
+        slug: "shoulder",
+        title: "Shoulder",
+        conditions: [
+            { id: 0, label: "Rotator Cuff Tear", arthritis: false },
+            { id: 1, label: "Dislocation/Instability", arthritis: false },
+            { id: 2, label: "Arthritis", arthritis: true },
+        ],
+        skeletonLocation: "top-[0%] left-[0%]",
+    },
 ];

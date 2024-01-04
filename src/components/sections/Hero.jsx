@@ -11,7 +11,7 @@ export default function Hero() {
                     <Link href="#contact">
                         <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 bg-[#40507C]/30 text-left group hover:bg-[#40507C]/40 transition duration-300 ease-in-out">
                             <p className="text-white text-sm">Contact us</p>
-                            <div className="mt-2 flex gap-6">
+                            <div className="mt-1 flex gap-6">
                                 <p className="text-gray-500 text-xs">We&apos;d love to learn more</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
@@ -20,7 +20,7 @@ export default function Hero() {
                     <Link href="#work">
                         <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 text-left group bg-gray-800/20 hover:bg-gray-800/30 transition duration-300 ease-in-out">
                             <p className="text-white text-sm">Recent work</p>
-                            <div className="mt-2 flex gap-6">
+                            <div className="mt-1 flex gap-6">
                                 <p className="text-gray-500 text-xs">Arnot Health Orthopedics</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
