@@ -8,20 +8,20 @@ export default function Hero() {
             <div className="md:basis-7/12 -mt-8">
                 <h1 className="font-hind font-semibold text-5xl leading-snug text-gray-200">Building better websites for doctors & their patients</h1>
                 <div className="mt-6 flex gap-8">
-                    <Link href="#contact">
-                        <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 bg-[#40507C]/30 text-left group hover:bg-[#40507C]/40 transition duration-300 ease-in-out">
-                            <p className="text-white text-sm">Contact us</p>
+                    <Link href="#work">
+                        <button className="border border-white/5 rounded-lg pl-6 pr-6 py-4 text-left group bg-gray-800/20 hover:bg-gray-800/30 transition duration-300 ease-in-out">
+                            <p className="text-gray-100 text-md">Recent work</p>
                             <div className="mt-1 flex gap-6">
-                                <p className="text-gray-500 text-xs">We&apos;d love to learn more</p>
+                                <p className="text-gray-500 text-xs">Arnot Health Orthopedics</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
                         </button>
                     </Link>
-                    <Link href="#work">
-                        <button className="border border-white/5 rounded-md pl-4 pr-6 py-3 text-left group bg-gray-800/20 hover:bg-gray-800/30 transition duration-300 ease-in-out">
-                            <p className="text-white text-sm">Recent work</p>
+                    <Link href="#contact">
+                        <button className="border border-white/5 rounded-lg pl-6 pr-6 py-4 bg-[#565A67]/20 text-left group hover:bg-[#565A67]/40 transition duration-300 ease-in-out">
+                            <p className="text-gray-100 text-md">Contact us</p>
                             <div className="mt-1 flex gap-6">
-                                <p className="text-gray-500 text-xs">Arnot Health Orthopedics</p>
+                                <p className="text-gray-500 text-xs">We&apos;d love to learn more</p>
                                 <FaArrowRight className="text-white group-hover:translate-x-1 transition duration-300 ease-in-out" />
                             </div>
                         </button>

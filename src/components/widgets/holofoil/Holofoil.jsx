@@ -96,7 +96,14 @@ export default function Holofoil(props) {
                         <div className="flex flex-col justify-between items-center my-4">
                             <div className="h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-black"></div>
                             <div className="flex flex-col items-center">
-                                <Image src={'/holofoil/id-profile.png'} width={128} height={128} alt="id badge profile photo" className="shadow-xl shadow-gray-950/40 overflow-hidden rounded-full" />
+                                <Image 
+                                    alt="id badge profile photo" 
+                                    src={'/holofoil/id-profile.png'} 
+                                    width={128} 
+                                    height={128} 
+                                    quality={100} 
+                                    className="shadow-xl shadow-gray-950/40 overflow-hidden rounded-full" 
+                                />
                                 <p className="mt-4 font-bold">Doogie Howser, MD</p>
                                 <p className="mt-1 text-xs font-light text-gray-300">Attending Physician</p>
                             </div>

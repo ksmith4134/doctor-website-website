@@ -9,6 +9,7 @@ export const services = [
             width: 308,
             height: 170,
         },
+        backgroundGradient: "top-left",
     },
     {
         id: 1,
@@ -20,6 +21,7 @@ export const services = [
             width: 578,
             height: 326,
         },
+        backgroundGradient: "top-left",
     },
     {
         id: 2,
@@ -31,17 +33,19 @@ export const services = [
             width: 405,
             height: 272,
         },
+        backgroundGradient: "top-left",
     },
     {
         id: 3,
         kicker: "Content Management",
         title: "Simple &<br />fast updates",
-        body: "Our content management system helps doctors quickly and easily add new information and resources to their site.",
+        body: "Our content management system helps doctors and advanced practice providers easily add new information and resources to their website.",
         image: {
             url: "/patterns/blocks.png",
             width: 437,
             height: 255,
         },
+        backgroundGradient: "top-left",
     },
 ];
 
@@ -57,7 +61,7 @@ export const portfolioNavigation = [
     {
         id: 0,
         slug: "elbow",
-        title: "Elbow",
+        label: "Elbow",
         conditions: [
             { id: 0, label: "Tendonitis", arthritis: false },
             { id: 1, label: "Cubital Tunnel Syndrome", arthritis: false },
@@ -67,7 +71,7 @@ export const portfolioNavigation = [
     {
         id: 1,
         slug: "hip",
-        title: "Hip",
+        label: "Hip",
         conditions: [
             { id: 0, label: "Osteoarthritis", arthritis: true },
             { id: 1, label: "Full Replacement", arthritis: true },
@@ -77,7 +81,7 @@ export const portfolioNavigation = [
     {
         id: 2,
         slug: "knee",
-        title: "Knee",
+        label: "Knee",
         conditions: [
             { id: 0, label: "ACL Tear", arthritis: false },
             { id: 1, label: "Full Replacement", arthritis: true },
@@ -87,10 +91,9 @@ export const portfolioNavigation = [
     {
         id: 2,
         slug: "shoulder",
-        title: "Shoulder",
+        label: "Shoulder",
         conditions: [
             { id: 0, label: "Rotator Cuff Tear", arthritis: false },
-            { id: 1, label: "Dislocation/Instability", arthritis: false },
             { id: 2, label: "Arthritis", arthritis: true },
         ],
         skeletonLocation: "top-[0%] left-[0%]",

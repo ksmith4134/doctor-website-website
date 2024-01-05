@@ -17,6 +17,7 @@ export default function Services(props) {
                     imageUrl={card.image.url}
                     imageWidth={card.image.width}
                     imageHeight={card.image.height}
+                    backgroundGradient={card.backgroundGradient}
                 />
             ))}
         </div>

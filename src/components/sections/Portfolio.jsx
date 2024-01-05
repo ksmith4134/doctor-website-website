@@ -56,35 +56,37 @@ export default function Portfolio() {
                     </a>
                 </h5>
             </div>
-            <div className='mt-20 flex gap-12 h-[600px]'>
+            <div className='mt-20 flex gap-12 h-[640px]'>
                 {/* NAVIGATION */}
                 <div className='w-60 shrink-0'>
-                    <div className='h-full p-px rounded-4xl bg-gradient-to-br from-white/30 from-0% to-white/5 to-50% overflow-hidden'>
-                        <div className='relative w-full h-full bg-gray-950 rounded-4xl'>
-                            <div className='w-full h-full p-4 rounded-4xl bg-gradient-to-br from-[#565A67]/20 to-gray-950 shadow-inner shadow-white/5'>
-                                <ul>
-                                    {portfolioCards.map((item) => (
-                                        <li
-                                            key={item.id}
-                                            onClick={() =>
-                                                setSelected(item.slug)
-                                            }
-                                            className={`
-                                                flex items-center gap-4 first:mt-0 mt-3 px-5 py-3 rounded-full hover:cursor-pointer
-                                                ${
-                                                    selected === item.slug
-                                                        ? "bg-gray-600/20"
-                                                        : "hover:bg-gray-600/10"
-                                                }
-                                            `}
-                                        >
-                                            <Icon icon={item.icon} />
-                                            <p className='text-sm font-thin text-white'>
-                                                {item.title}
-                                            </p>
-                                        </li>
-                                    ))}
-                                </ul>
+                        <div className='w-full h-full p-px rounded-4xl bg-gradient-to-br from-white/20 from-0% to-white/5 to-50% overflow-hidden'>
+                            <div className='relative w-full h-full bg-gray-950 rounded-4xl'>
+                                <div className="w-full h-full rounded-4xl bg-noise bg-repeat">
+                                    <div className='w-full h-full p-4 rounded-4xl bg-gradient-to-br from-[#565A67]/20 to-gray-950 shadow-inner shadow-white/5'>
+                                        <ul>
+                                            {portfolioCards.map((item) => (
+                                                <li
+                                                    key={item.id}
+                                                    onClick={() =>
+                                                        setSelected(item.slug)
+                                                    }
+                                                    className={`
+                                                        flex items-center gap-4 first:mt-0 mt-3 px-5 py-3 rounded-full hover:cursor-pointer
+                                                        ${
+                                                            selected === item.slug
+                                                                ? "bg-gray-600/30"
+                                                                : "hover:bg-gray-600/20"
+                                                        }
+                                                    `}
+                                                >
+                                                    <Icon icon={item.icon} />
+                                                    <p className='text-sm font-thin text-white'>
+                                                        {item.title}
+                                                    </p>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                             </div>
                         </div>
                     </div>
