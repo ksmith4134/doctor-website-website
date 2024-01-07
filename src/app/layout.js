@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
         <html lang='en'>
             <body className={`bg-gray-950 ${inter.className} ${hind_siliguri.variable}`}>
                 <Header />
-                <MaxWidth>
+                
                     {children}
-                </MaxWidth>
+                
                 <Footer />
             </body>
         </html>

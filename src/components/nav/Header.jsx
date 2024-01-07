@@ -3,7 +3,7 @@ import MaxWidth from "../utils/MaxWidth";
 
 export default function Header() {
     return (
-        <header className="font-hind w-full py-3 sticky top-0 z-10 backdrop-blur-xl bg-gray-950/50">
+        <header className="font-hind w-full py-3 sticky top-0 z-50 backdrop-blur-xl bg-gray-950/50">
             <MaxWidth>
                 <nav className="flex items-center justify-between">
                     <div className="text-sm text-white font-bold uppercase">
@@ -29,7 +29,7 @@ export default function Header() {
                         </li>
                         <li>
                             <Link href="#contact">
-                                <button className="px-5 py-2 rounded-full bg-gray-600 hover:bg-gray-600/50 transition duration-300 ease-in-out">Contact</button>
+                                <button className="px-5 py-2 rounded-full bg-gray-600/50 hover:bg-gray-600 transition duration-300 ease-in-out">Contact</button>
                             </Link>
                         </li>
                     </ul>

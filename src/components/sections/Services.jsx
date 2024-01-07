@@ -7,7 +7,7 @@ export default function Services(props) {
     } = props;
 
     return (
-        <div className="text-white grid grid-cols-2 gap-16">
+        <div className="text-white grid grid-cols-3 grid-flow-row gap-20">
             { services.map((card) => (
                 <Card 
                     key={card.id}

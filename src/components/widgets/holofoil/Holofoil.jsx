@@ -7,12 +7,12 @@ import styles from './Holofoil.module.css'
 export default function Holofoil(props) {
 
     const {
-        width = '360px',
-        height = '480px',
+        width = '480px',
+        height = '360px',
         perspective = 600,
-        radius = 32,
+        radius = 28,
         foregroundImage = '/holofoil/foreground.png',
-        opacity = 0,
+        opacity = 0.2,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,
@@ -81,6 +81,7 @@ export default function Holofoil(props) {
                         <Image 
                             alt="Doctor ID badge" 
                             fill
+                            priority={true}
                             className={styles.image}
                             quality={100}
                             style={{ color:"transparent" }} 
@@ -104,11 +105,11 @@ export default function Holofoil(props) {
                                     quality={100} 
                                     className="shadow-xl shadow-gray-950/40 overflow-hidden rounded-full" 
                                 />
-                                <p className="mt-4 font-bold">Doogie Howser, MD</p>
+                                <p className="mt-4 font-bold text-gray-300">Doogie Howser, MD</p>
                                 <p className="mt-1 text-xs font-light text-gray-300">Attending Physician</p>
                             </div>
                             <div>
-                                <div className="text-xs text-gray-300 font-light flex flex-col gap-1">
+                                {/* <div className="text-xs text-gray-300 font-light flex flex-col gap-1">
                                     <div className="flex justify-between">
                                         <p>ID #</p>
                                         <p>000 001</p>
@@ -121,8 +122,8 @@ export default function Holofoil(props) {
                                         <p>Phone</p>
                                         <p>(555) 555-5555</p>
                                     </div>
-                                </div>
-                                <Image src={'/holofoil/barcode.png'} width={220} height={28} alt="barcode" className="mt-12" />
+                                </div> */}
+                                <Image src={'/holofoil/barcode.png'} width={220} height={24} alt="barcode" className="" />
                             </div>
                         </div>
                     </div>
