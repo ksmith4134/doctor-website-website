@@ -54,7 +54,7 @@ export default function Portfolio() {
                     </a>
                 </h5>
             </div>
-            <div className='mt-20 flex gap-12 h-[720px]'>
+            <div className='mt-20 flex gap-8 h-[720px]'>
                 {/* NAVIGATION */}
                 <div className='w-60 shrink-0'>
                     <div className='w-full h-full p-px rounded-lg bg-gradient-to-br from-white/20 from-0% to-white/5 to-50% overflow-hidden'>

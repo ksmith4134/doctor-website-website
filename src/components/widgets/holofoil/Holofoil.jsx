@@ -7,19 +7,19 @@ import styles from './Holofoil.module.css'
 export default function Holofoil(props) {
 
     const {
-        width = '480px',
+        width = '520px',
         height = '360px',
         perspective = 600,
         radius = 28,
         foregroundImage = '/holofoil/foreground.png',
-        opacity = 0.2,
+        opacity = 0.4,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,
         children,
     } = props
 
-    const [ holoCoordinates, setHoloCoordinates ] = useState({ mx: 30, my: 50, bx: 30, by: 30, rx: 0, ry: 0, opacity })
+    const [ holoCoordinates, setHoloCoordinates ] = useState({ mx: 30, my: 30, bx: 45, by: 45, rx: 0, ry: 0, opacity })
 
     let bounds;
     const inputRef = useRef();
@@ -95,8 +95,8 @@ export default function Holofoil(props) {
 
                     <div className="absolute top-0 left-0">
                         <div className="flex flex-col justify-between items-center my-4">
-                            <div className="h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-black"></div>
-                            <div className="flex flex-col items-center">
+                            <div className="h-4 w-14 rounded-full bg-gray-900 shadow-inner shadow-gray-600/10"></div>
+                            {/* <div className="flex flex-col items-center">
                                 <Image 
                                     alt="id badge profile photo" 
                                     src={'/holofoil/id-profile.png'} 
@@ -107,7 +107,7 @@ export default function Holofoil(props) {
                                 />
                                 <p className="mt-4 font-bold text-gray-300">Doogie Howser, MD</p>
                                 <p className="mt-1 text-xs font-light text-gray-300">Attending Physician</p>
-                            </div>
+                            </div> */}
                             <div>
                                 {/* <div className="text-xs text-gray-300 font-light flex flex-col gap-1">
                                     <div className="flex justify-between">

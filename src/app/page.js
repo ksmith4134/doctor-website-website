@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import CMS from "@/components/sections/CMS";
 import Contact from "@/components/sections/Contact";
 import Hero from "@/components/sections/Hero";
 import Portfolio from "@/components/sections/Portfolio";
@@ -20,8 +21,8 @@ export default function Home() {
                 <div id="work" className="pt-60">
                     <Portfolio />
                 </div>
-                <div id="innovation">
-                    
+                <div id="innovation" className="pt-60">
+                    <CMS />
                 </div>
                 <div id="about" className="pt-60">
                     <About />
