@@ -25,7 +25,7 @@ export default function Card(props) {
                     </div>
                 </div>
                 <div className="absolute top-1 right-1">
-                    <Image src={imageUrl} width={imageWidth} height={imageHeight} alt="simple background pattern" className="opacity-80 rounded-[30px]" />
+                    <Image src={imageUrl} width={imageWidth} height={imageHeight} alt="simple background pattern" className="rounded-[30px]" />
                 </div>
             </div>
         </div>
