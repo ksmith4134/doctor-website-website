@@ -57,10 +57,10 @@ export default function Portfolio() {
             <div className='mt-20 flex gap-8 h-[720px]'>
                 {/* NAVIGATION */}
                 <div className='w-60 shrink-0'>
-                    <div className='w-full h-full p-px rounded-lg bg-gradient-to-br from-white/20 from-0% to-white/5 to-50% overflow-hidden'>
-                        <div className='relative w-full h-full bg-gray-950 rounded-lg'>
-                            <div className='w-full h-full rounded-lg bg-noise bg-repeat'>
-                                <div className='w-full h-full p-4 rounded-lg bg-gradient-to-br from-[#565A67]/20 to-gray-950'>
+                    <div className='w-full h-full p-px rounded-2xl bg-gradient-to-br from-white/20 from-0% to-white/5 to-50% overflow-hidden'>
+                        <div className='relative w-full h-full bg-gray-950 rounded-2xl'>
+                            <div className='w-full h-full rounded-2xl bg-noise bg-repeat'>
+                                <div className='w-full h-full p-4 rounded-2xl bg-gradient-to-br from-[#565A67]/20 to-gray-950'>
                                     <ul>
                                         {portfolioCards.map((item) => (
                                             <li
@@ -69,7 +69,7 @@ export default function Portfolio() {
                                                     setSelected(item.slug)
                                                 }
                                                 className={`
-                                                        flex items-center gap-4 first:mt-2 mt-3 px-5 py-3 rounded-md hover:cursor-pointer
+                                                        flex items-center gap-4 first:mt-2 mt-3 px-5 py-3 rounded-lg hover:cursor-pointer
                                                         ${
                                                             selected ===
                                                             item.slug
@@ -92,8 +92,8 @@ export default function Portfolio() {
                 </div>
                 {/* PORTFOLIO SAMPLE */}
                 <div className='w-full shrink'>
-                    <div className={`h-full overflow-hidden ${selected !== "photography" && 'p-px rounded-lg bg-gradient-to-br from-white/10 from-0% to-white/5 to-20%'}`}>
-                        <div className={`relative w-full h-full rounded-lg bg-gray-950 ${selected !== "photography" && 'p-16'}`}>
+                    <div className={`h-full overflow-hidden ${selected !== "photography" && 'p-px rounded-2xl bg-gradient-to-br from-white/10 from-0% to-white/5 to-20%'}`}>
+                        <div className={`relative w-full h-full rounded-2xl ${selected !== "photography" && 'bg-gray-950 p-16'}`}>
                             {component}
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import { portfolioPhotography } from "@/lib/cms";
 
 export default function Photography() {
     return (
-        <div className='w-full h-full grid grid-cols-4 grid-flow-row gap-8 overflow-hidden'>
+        <div className='p-px w-full h-full grid grid-cols-4 grid-flow-row gap-8 overflow-hidden'>
             {portfolioPhotography.map((photo, index) => (
                 <div
                     key={photo.id}
@@ -14,7 +14,7 @@ export default function Photography() {
                         src={photo.imageUrl}
                         fill={true}
                         quality={100}
-                        className='object-cover rounded-lg'
+                        className='object-cover rounded-2xl'
                     />
                 </div>
             ))}
