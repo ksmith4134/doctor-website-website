@@ -2,7 +2,6 @@ import "./globals.css";
 import { inter, hind_siliguri } from "@/components/utils/fonts";
 import Header from "@/components/nav/Header";
 import Footer from "@/components/nav/Footer";
-import MaxWidth from "@/components/utils/MaxWidth";
 
 
 export const metadata = {
