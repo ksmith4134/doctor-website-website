@@ -6,8 +6,8 @@ import { SubmitButton } from "./SubmitButton";
 
 const initialState = {
     message: {
-        body: "",
-        type: "",
+        body: '',
+        type: '',
     }
 }
 
