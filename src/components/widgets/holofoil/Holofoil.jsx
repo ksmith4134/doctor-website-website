@@ -2,16 +2,18 @@
 
 import { useState, useRef } from "react";
 import Image from "next/image";
-import styles from './Holofoil.module.css'
+import styles from "./Holofoil.module.css";
+import { IoMedical } from "react-icons/io5";
+import { FaBarcode } from "react-icons/fa";
 
 export default function Holofoil(props) {
 
     const {
         width = '520px',
-        height = '360px',
+        height = '364px',
         perspective = 600,
         radius = 28,
-        foregroundImage = '/holofoil/foreground.png',
+        foregroundImage = '/holofoil/foreground-26.png',
         opacity = 0.2,
         rotateX = 12,
         rotateY = 12,
@@ -93,37 +95,41 @@ export default function Holofoil(props) {
                     <div className={styles.cursourHighlight}></div>
                     <div className={styles.foil}></div>
 
-                    <div className="absolute top-0 left-0">
+                    <div className="absolute top-0 left-0 shadow-inner shadow-gray-600/10 rounded-[28px]">
                         <div className="flex flex-col justify-between items-center my-4">
+                            {/* cut-out */}
                             <div className="h-4 w-14 rounded-full bg-gray-900 shadow-inner shadow-gray-600/10"></div>
-                            {/* <div className="flex flex-col items-center">
-                                <Image 
-                                    alt="id badge profile photo" 
-                                    src={'/holofoil/id-profile.png'} 
-                                    width={128} 
-                                    height={128} 
-                                    quality={100} 
-                                    className="shadow-xl shadow-gray-950/40 overflow-hidden rounded-full" 
-                                />
-                                <p className="mt-4 font-bold text-gray-300">Doogie Howser, MD</p>
-                                <p className="mt-1 text-xs font-light text-gray-300">Attending Physician</p>
-                            </div> */}
-                            <div>
-                                {/* <div className="text-xs text-gray-300 font-light flex flex-col gap-1">
-                                    <div className="flex justify-between">
-                                        <p>ID #</p>
-                                        <p>000 001</p>
+                            {/* body */}
+                            <div className="flex justify-start items-center gap-14 -mr-[2px] mb-1">
+                                <div className="flex justify-center items-center">
+                                    <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image.png"} width={152} height={219} />
+                                </div>
+                                <div className="">
+                                    <h4 className="text-xl font-bold text-gray-200">Doogie Howser, MD</h4>
+                                    <h5 className="mt-1 text-sm font-light text-gray-400">Attending Physician</h5>
+                                    <div className="mt-8 flex justify-between items-center gap-8 text-sm text-gray-400">
+                                        <div>
+                                            <p className="font-bold">ID No</p>
+                                            <p className="mt-1">0100100101</p>
+                                        </div>
+                                        <div>
+                                            <p className="font-bold">Phone</p>
+                                            <p className="mt-1">(585) 555-5555</p>
+                                        </div>
                                     </div>
-                                    <div className="flex justify-between">
-                                        <p>Boards</p>
-                                        <p>01/01/2024</p>
+                                    <div className="mt-6 flex justify-between items-center gap-8 text-sm text-gray-400">
+                                        <div>
+                                            <p className="font-bold">Expiration</p>
+                                            <p className="mt-1">DD/MM/YYYY</p>
+                                        </div>
+                                        <Image alt="barcode" src={"/holofoil/barcode-2.png"} width={100} height={43} />
                                     </div>
-                                    <div className="flex justify-between">
-                                        <p>Phone</p>
-                                        <p>(555) 555-5555</p>
-                                    </div>
-                                </div> */}
-                                <Image src={'/holofoil/barcode.png'} width={220} height={24} alt="barcode" className="" />
+                                </div>
+                            </div>
+                            {/* footer */}
+                            <div className="flex items-center gap-2">
+                                <IoMedical className="text-white text-xl opacity-60" />
+                                <p className="text-white font-thin">Eastman Medical Center</p>
                             </div>
                         </div>
                     </div>
