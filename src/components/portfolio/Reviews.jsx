@@ -7,14 +7,14 @@ export default function Reviews() {
 
     return (
         <div className='h-full flex justify-center items-start gap-8'>
-            <div className='basis-4/12 mt-2 flex flex-col gap-4'>
+            <div className='basis-4/12 mt-0 flex flex-col gap-4'>
                 {portfolioReviews.map((doctor) => (
                     <div
                         key={doctor.id}
                         onClick={() => setSelected(doctor.id)}
                         className={`p-3 flex items-center gap-4 rounded-lg border ${
                             selected === doctor.id
-                                ? "grayscale-0 border-portfolio-primary/20 bg-portfolio-primary/10 text-gray-200"
+                                ? "grayscale-0 border-portfolio-primary/20 bg-portfolio-primary/10 text-gray-200 shadow-inner shadow-white/5"
                                 : "grayscale hover:grayscale-0 border-transparent text-gray-600 hover:text-gray-400 hover:cursor-pointer"
                         }`}
                     >
@@ -38,7 +38,7 @@ export default function Reviews() {
                     <div>
                         <h3 className="text-lg font-bold">{portfolioReviews[selected].review.title}</h3>
                         <Image alt="review stars" src={'/portfolio/arnot/review-stars.png'} width={110} height={15} className="mt-2" /> {/* 157 x 21 */}
-                        <p className="mt-6">{portfolioReviews[selected].review.body}</p>
+                        <p className="mt-6 font-extralight">{portfolioReviews[selected].review.body}</p>
                     </div>
                     <div className="mt-8 flex items-center gap-4">
                         <Image

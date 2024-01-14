@@ -4,7 +4,6 @@ import { useState, useRef } from "react";
 import Image from "next/image";
 import styles from "./Holofoil.module.css";
 import { IoMedical } from "react-icons/io5";
-import { FaBarcode } from "react-icons/fa";
 
 export default function Holofoil(props) {
 
@@ -13,8 +12,8 @@ export default function Holofoil(props) {
         height = '364px',
         perspective = 600,
         radius = 28,
-        foregroundImage = '/holofoil/foreground-26.png',
-        opacity = 0.2,
+        foregroundImage = '/holofoil/foreground-28.png',
+        opacity = 0,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,
@@ -96,40 +95,47 @@ export default function Holofoil(props) {
                     <div className={styles.foil}></div>
 
                     <div className="absolute top-0 left-0 shadow-inner shadow-gray-600/10 rounded-[28px]">
-                        <div className="flex flex-col justify-between items-center my-4">
+                        <div className="h-4 w-full mx-auto">
                             {/* cut-out */}
-                            <div className="h-4 w-14 rounded-full bg-gray-900 shadow-inner shadow-gray-600/10"></div>
+                            <div className="mt-4 mx-auto h-4 w-14 rounded-full bg-gray-900 shadow-inner shadow-gray-600/10"></div>
+                        </div>
+                        <div className="flex flex-col justify-between items-start pl-11 my-4 text-gray-200">
                             {/* body */}
-                            <div className="flex justify-start items-center gap-14 -mr-[2px] mb-1">
+                            <div className="flex justify-start items-center gap-14 mb-1">
                                 <div className="flex justify-center items-center">
-                                    <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image.png"} width={152} height={219} />
+                                    <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image.png"} width={152} height={219} quality={100} priority />
                                 </div>
                                 <div className="">
-                                    <h4 className="text-xl font-bold text-gray-200">Doogie Howser, MD</h4>
-                                    <h5 className="mt-1 text-sm font-light text-gray-400">Attending Physician</h5>
-                                    <div className="mt-8 flex justify-between items-center gap-8 text-sm text-gray-400">
-                                        <div>
-                                            <p className="font-bold">ID No</p>
-                                            <p className="mt-1">0100100101</p>
+                                    <h4 className="text-xl font-bold">Doogie Howser, MD</h4>
+                                    <h5 className="mt-1 text-sm font-light">Attending Physician</h5>
+                                    <div className="mt-8 flex gap-10">
+                                        <div className="flex flex-col justify-center items-between gap-6 text-sm">
+                                            <div>
+                                                <p className="font-bold">ID No</p>
+                                                <p className="mt-1">0100100101</p>
+                                            </div>
+                                            <div>
+                                                <p className="font-bold">Phone</p>
+                                                <p className="mt-1">555-5555</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p className="font-bold">Phone</p>
-                                            <p className="mt-1">(585) 555-5555</p>
+                                        <div className="flex flex-col justify-center items-between gap-6 text-sm">
+                                            <div>
+                                                <p className="font-bold">New Patients</p>
+                                                <p className="mt-1">Accepting</p>
+                                            </div>
+                                            <div>
+                                                <p className="font-bold">Extension</p>
+                                                <p className="mt-1">x110</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="mt-6 flex justify-between items-center gap-8 text-sm text-gray-400">
-                                        <div>
-                                            <p className="font-bold">Expiration</p>
-                                            <p className="mt-1">DD/MM/YYYY</p>
-                                        </div>
-                                        <Image alt="barcode" src={"/holofoil/barcode-2.png"} width={100} height={43} />
                                     </div>
                                 </div>
                             </div>
                             {/* footer */}
-                            <div className="flex items-center gap-2">
-                                <IoMedical className="text-white text-xl opacity-60" />
-                                <p className="text-white font-thin">Eastman Medical Center</p>
+                            <div className="-ml-2 flex items-center gap-2">
+                                <IoMedical className="text-xl opacity-80" />
+                                <p className="font-light">Eastman Medical Center</p>
                             </div>
                         </div>
                     </div>

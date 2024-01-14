@@ -28,7 +28,7 @@ export default function CMS() {
                                 <p className="text-xs">coming soon</p>
                             </div>
                         </div>
-                        <p className='mt-8 font-light text-gray-200 leading-7'>
+                        <p className='mt-8 text-sm font-extralight text-gray-300 leading-7'>
                             Our content management system (CMS) is designed specifically for doctors who need to quickly and easily add new information and resources to their site.
                         </p>
                         <Image
@@ -36,7 +36,7 @@ export default function CMS() {
                             src={"/cms.png"}
                             width={850}
                             height={497}
-                            className="absolute top-[51%] left-[8%]"
+                            className="absolute top-[49%] left-[8%]"
                         />
                     </CardLarge>
                 </div>
@@ -46,7 +46,7 @@ export default function CMS() {
                         <div className='flex justify-between items-start gap-2'>
                             <div>
                                 <h4 className='mt-1 text-sm text-gray-600 font-light'>
-                                    Content Creating
+                                    Content Creation
                                 </h4>
                                 <h3 className='mt-4 text-3xl text-gray-200 font-semibold'>
                                     AI Writing Assistant
@@ -57,22 +57,21 @@ export default function CMS() {
                                 <p className="text-xs">coming soon</p>
                             </div>
                         </div>
-                        <p className='mt-8 font-light text-gray-200 leading-7'>
-                            Create reusable patient resources in a fraction of the time using White Coat&apos;s ChatGPT-powered, AI assistant. Write new content for treatment and condition pages, create new PDFs, and much more.
+                        <p className='mt-8 text-sm font-extralight text-gray-300 leading-7'>
+                            Create reusable patient resources in a fraction of the time using our ChatGPT-powered, AI assistant. Write new content for treatment pages, PDFs, and more.
                         </p>
                         <Image
                             alt='using chatGPT to write medical content'
-                            src={"/ai.png"}
+                            src={"/ai-4.png"}
                             width={520}
                             height={352}
+                            quality={100}
                             className="absolute bottom-[0%]"
                         />
                     </CardLarge>
                 </div>
             </div>
-            <div className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-gray-950 to-transparent z-10">
-
-            </div>
+            <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-gray-950 from-[4%] to-transparent z-10"></div>
         </div>
     );
 }

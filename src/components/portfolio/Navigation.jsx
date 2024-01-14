@@ -65,7 +65,7 @@ export default function Navigation() {
                             className={`w-full last:mt-2 py-3 rounded-md text-center ${
                                 filter === false
                                     ? "bg-portfolio-primary text-white"
-                                    : "bg-gray-200"
+                                    : "bg-gray-300 hover:bg-portfolio-primary hover:text-white"
                             }`}
                         >
                             All Treatments
@@ -75,7 +75,7 @@ export default function Navigation() {
                             className={`w-full last:mt-2 py-3 rounded-md text-center ${
                                 filter === true
                                     ? "bg-portfolio-secondary text-white"
-                                    : "bg-gray-200"
+                                    : "bg-gray-300 hover:bg-portfolio-secondary hover:text-white"
                             }`}
                         >
                             Arthritis & Joint Replacements

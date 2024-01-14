@@ -19,13 +19,13 @@ export default function Profiles() {
                 </div>
             </div>
             <div className='w-full pt-12'>
-                <h3 className="-ml-2 mb-8 font-semibold text-2xl text-gray-200">Education</h3>
+                <h3 className="-ml-2 mb-10 font-semibold text-2xl text-gray-200">Education</h3>
                 {portfolioProfileEducation.map((item) => (
-                    <div key={item.id} className="last:pb-0 pb-8 border-l border-gray-400/30">
+                    <div key={item.id} className="mt-3 mb-2 last:pb-0 pb-8 border-l border-gray-400/30">
                         <div className="flex justify-start items-start gap-4">
-                            <div className="-ml-3 w-6 h-6 bg-gray-300 rounded-full border-8 border-gray-950"></div>
-                            <div className="">
-                                <h4 className="text-gray-200">{item.label}</h4>
+                            <div className="-ml-[5px] w-2 h-2 bg-gray-300 rounded-full"></div>
+                            <div className="-mt-2">
+                                <h4 className="font-light text-gray-200">{item.label}</h4>
                                 <h5 key={item.id} className="mt-1 font-light text-sm text-portfolio-primary">{item.link}</h5>
                             </div>
                         </div>

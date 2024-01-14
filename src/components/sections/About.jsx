@@ -6,8 +6,10 @@ export default function About() {
         <div className="flex justify-center items-center gap-20">
             <div className="basis-5/12">
                 <h2 className="font-hind font-semibold text-5xl leading-snug text-gray-200">About Us</h2>
-                <p className="mt-4 text-gray-200">Revered was founded by brothers Kevin and David Smith. They share a combined experience of over 20 years in web design and development.</p>
-                <p className="mt-4 text-gray-200">Both Kevin and David reside in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems. Many of their close family members work in the medical field which inspired them to start creating better online experiences for patients and professionals.</p>
+                <div className="text-gray-200 font-extralight">
+                    <p className="mt-4">Revered was founded by brothers Kevin and David Smith. They share a combined experience of over 20 years in web design and development.</p>
+                    <p className="mt-4">Both Kevin and David reside in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems. Many of their close family members work in the medical field which inspired them to start creating better online experiences for patients and professionals.</p>
+                </div>
             </div>
             <div className="h-96 basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">
                 <div className="relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
@@ -16,7 +18,7 @@ export default function About() {
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">
                         {/* IMAGE */}
                         <div className="z-10 relative w-full h-72 rounded-2xl overflow-hidden">
-                            <Image alt="" src={'/david.jpg'} fill={true} className="object-cover grayscale group-hover:grayscale-0 transition duration-300 ease-in-out" />
+                            <Image alt="" src={'/david.jpg'} fill={true} className="object-cover grayscale-0 group-hover:grayscale-0 transition duration-300 ease-in-out" />
                         </div>
                         
                         {/* TEXT */}
@@ -32,7 +34,7 @@ export default function About() {
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">
                         {/* IMAGE */}
                         <div className="z-10 relative w-full h-72 rounded-2xl overflow-hidden">
-                            <Image alt="" src={'/kevin.jpg'} fill={true} className="object-cover grayscale group-hover:grayscale-0 transition duration-300 ease-in-out" />
+                            <Image alt="" src={'/kevin.jpg'} fill={true} className="object-cover grayscale-0 group-hover:grayscale-0 transition duration-300 ease-in-out" />
                         </div>
                         
                         {/* TEXT */}

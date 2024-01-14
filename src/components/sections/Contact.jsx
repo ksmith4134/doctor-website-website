@@ -22,7 +22,7 @@ export default function Contact() {
                     </div>
 
                     {/* CONTACT FORM */}
-                    <div className='basis-5/12 px-12 py-14 bg-white/5 rounded-3xl'>
+                    <div className='basis-5/12 px-12 py-14 bg-gray-400/10 rounded-3xl'>
                         <h3 className='text-3xl font-hind font-semibold text-gray-200'>
                             Contact
                         </h3>

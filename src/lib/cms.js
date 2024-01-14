@@ -17,9 +17,9 @@ export const services = [
         title: "Eliminate<br />vendor lock-in",
         body: "We use common tools so you’ll never have trouble finding someone to take over your site should you move to another agency in the future.",
         image: {
-            url: "/patterns/dots.png",
-            width: 578,
-            height: 326,
+            url: "/patterns/flannel.png",
+            width: 405,
+            height: 272,
         },
         backgroundGradient: "top-left",
     },
@@ -29,9 +29,9 @@ export const services = [
         title: "Capture once,<br />use forever",
         body: "We can help with photography, video, and document creation. We also help providers use AI to speed up development of patient documentation.",
         image: {
-            url: "/patterns/flannel.png",
-            width: 405,
-            height: 272,
+            url: "/patterns/dots.png",
+            width: 578,
+            height: 326,
         },
         backgroundGradient: "top-left",
     },
@@ -41,24 +41,24 @@ export const services = [
         title: "Simple &<br />fast updates",
         body: "Our content management system helps doctors and advanced practice providers easily add new information and resources to their website.",
         image: {
-            url: "/patterns/dots.png",
-            width: 437,
-            height: 255,
-        },
-        backgroundGradient: "top-left",
-    },
-    {
-        id: 3,
-        kicker: "SEO",
-        title: "New patient<br />discovery",
-        body: "We use search engine optimization techniques to make sure your site is easily found, especially by patients in your local region.",
-        image: {
             url: "/patterns/blocks.png",
             width: 437,
             height: 255,
         },
         backgroundGradient: "top-left",
     },
+    // {
+    //     id: 3,
+    //     kicker: "SEO",
+    //     title: "New patient<br />discovery",
+    //     body: "We use search engine optimization techniques to make sure your site is easily found, especially by patients in your local region.",
+    //     image: {
+    //         url: "/patterns/blocks.png",
+    //         width: 437,
+    //         height: 255,
+    //     },
+    //     backgroundGradient: "top-left",
+    // },
 ];
 
 export const portfolioCards = [

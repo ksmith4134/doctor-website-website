@@ -11,6 +11,7 @@ export const ICONS = {
 
 export const BACKGROUND = {
     GRADIENT_DIRECTION: {
+        "radial": "bg-gradient-radial",
         "top-left": "bg-gradient-to-tl",
         "top-right": "bg-gradient-to-tr",
         "bottom-left": "bg-gradient-to-bl",

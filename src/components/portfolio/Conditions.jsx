@@ -25,7 +25,7 @@ export default function Conditions() {
                             {index.label}
                         </div>
                     ))}
-                    <div className='absolute top-0 left-0 w-[3px] h-8 bg-portfolio-primary/80'></div>
+                    <div className='absolute top-0 left-0 -ml-[2px] w-[3px] h-8 bg-portfolio-primary/80'></div>
                 </div>
                 <div className='mt-12 ml-1'>
                     <div className='flex items-center gap-3 text-gray-200 hover:text-portfolio-primary hover:cursor-pointer last:mt-6'>

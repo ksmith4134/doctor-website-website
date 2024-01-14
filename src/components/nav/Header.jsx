@@ -13,6 +13,11 @@ export default function Header() {
                     </div>
                     <ul className="flex items-center gap-12 text-white text-sm">
                         <li className="hidden md:block">
+                            <Link href="/">
+                                <span>Home</span>
+                            </Link>
+                        </li>
+                        <li className="hidden md:block">
                             <Link href="#services">
                                 <span>Services</span>
                             </Link>

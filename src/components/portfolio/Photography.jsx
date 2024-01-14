@@ -14,7 +14,7 @@ export default function Photography() {
                         src={photo.imageUrl}
                         fill={true}
                         quality={100}
-                        className='object-cover rounded-2xl'
+                        className='object-cover rounded-lg'
                     />
                 </div>
             ))}
