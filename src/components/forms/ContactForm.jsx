@@ -1,19 +1,31 @@
 "use client";
 
 import { useFormState } from "react-dom";
-import { contactMe } from "@/actions/contactMe";
+import { useEffect, useState } from "react";
+import { sendContactEmail } from "@/actions/sendContactEmail";
 import { SubmitButton } from "./SubmitButton";
 
 const initialState = {
     message: {
-        body: '',
-        type: '',
-    }
-}
+        body: "",
+        type: "",
+    },
+    count: 0,
+    disableThreshold: 2,
+};
 
 export default function ContactForm() {
-    
-    const [state, formAction] = useFormState(contactMe, initialState);
+
+    const [state, formAction] = useFormState(sendContactEmail, initialState);
+    const [inputs, setInputs] = useState({ name: "", email: "" });
+    const [disableForm, setDisableForm] = useState(false);
+
+    useEffect(() => {
+        setInputs({ name: "", email: "" });
+        if(state.count > state.disableThreshold){
+            setDisableForm(true)
+        }
+    }, [state]);
 
     return (
         <form action={formAction} id='contact' className='mt-12 text-gray-200'>
@@ -25,12 +37,17 @@ export default function ContactForm() {
                 type='text'
                 id='name'
                 name='name'
+                onChange={(e) =>
+                    setInputs({ email: inputs.email, name: e.target.value })
+                }
+                value={inputs.name}
                 minLength='3'
                 maxLength='25'
-                placeholder='Enter your name'
+                placeholder={disableForm ? 'Disabled' : 'Enter your name'}
                 autoComplete='off'
                 required
-                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-600'
+                disabled={disableForm}
+                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-400'
             ></input>
             <br />
             <br />
@@ -43,15 +60,19 @@ export default function ContactForm() {
                 type='email'
                 id='email'
                 name='email'
-                placeholder='Enter your email'
+                onChange={(e) =>
+                    setInputs({ email: e.target.value, name: inputs.name })
+                }
+                value={inputs.email}
+                placeholder={disableForm ? 'Disabled' : 'Enter your email'}
                 autoComplete='off'
                 required
-                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-600'
+                disabled={disableForm}
+                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-400'
             ></input>
             <br />
 
-            <SubmitButton message={state.message} />
-            
+            <SubmitButton message={state.message} disableForm={disableForm} />
         </form>
     );
 }

@@ -17,3 +17,9 @@ export const BACKGROUND = {
         "bottom-right": "bg-gradient-to-br",
     },
 }
+
+export const FONT_COLORS = {
+    "success": "text-emerald-300",
+    "error": "text-red-400",
+    "warn": "text-amber-400",
+}
