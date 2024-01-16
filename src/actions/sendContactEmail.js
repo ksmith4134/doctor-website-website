@@ -10,13 +10,16 @@ export async function sendContactEmail(prevState, formData) {
             type: "",
         },
         count: 0,
-        disableThreshold: 2,
+        disable: false,
     };
 
-    if(prevState.count >= prevState.disableThreshold){
+    const disableThreshold = 2;
+
+    if(prevState.count >= disableThreshold){
         state.message.body = "Form is temporarily deactivated. Try again later.";
         state.message.type = "warn";
         state.count = prevState.count + 1;
+        state.disable = true;
         return state;
     }
 

@@ -8,12 +8,12 @@ import { IoMedical } from "react-icons/io5";
 export default function Holofoil(props) {
 
     const {
-        width = '520px',
-        height = '364px',
+        width = '364px',
+        height = '520px',
         perspective = 600,
         radius = 28,
-        foregroundImage = '/holofoil/foreground-28.png',
-        opacity = 0,
+        foregroundImage = '/holofoil/foreground-29.png',
+        opacity = 0.4,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,
@@ -95,20 +95,19 @@ export default function Holofoil(props) {
                     <div className={styles.foil}></div>
 
                     <div className="absolute top-0 left-0 shadow-inner shadow-gray-600/10 rounded-[28px]">
-                        <div className="h-4 w-full mx-auto">
-                            {/* cut-out */}
-                            <div className="mt-4 mx-auto h-4 w-14 rounded-full bg-gray-900 shadow-inner shadow-gray-600/10"></div>
-                        </div>
-                        <div className="flex flex-col justify-between items-start pl-11 my-4 text-gray-200">
+                        
+                        <div className="flex flex-col justify-between items-center text-gray-200">
+                            {/* cut out */}
+                            <div className="mt-4 mx-auto h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-gray-600/10"></div>
                             {/* body */}
-                            <div className="flex justify-start items-center gap-14 mb-1">
+                            <div className="flex flex-col justify-center items-">
                                 <div className="flex justify-center items-center">
-                                    <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image.png"} width={152} height={219} quality={100} priority />
+                                    <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image-2.png"} width={140} height={140} quality={100} priority />
                                 </div>
-                                <div className="">
-                                    <h4 className="text-xl font-bold">Doogie Howser, MD</h4>
-                                    <h5 className="mt-1 text-sm font-light">Attending Physician</h5>
-                                    <div className="mt-8 flex gap-10">
+                                <div className="mt-6">
+                                    <h4 className="text-center text-xl font-bold">Doogie Howser, MD</h4>
+                                    <h5 className="text-center mt-1 text-sm font-light">Attending Physician</h5>
+                                    <div className="mt-10 flex gap-10">
                                         <div className="flex flex-col justify-center items-between gap-6 text-sm">
                                             <div>
                                                 <p className="font-bold">ID No</p>
@@ -133,7 +132,7 @@ export default function Holofoil(props) {
                                 </div>
                             </div>
                             {/* footer */}
-                            <div className="-ml-2 flex items-center gap-2">
+                            <div className="flex items-center gap-2 mt-1 mb-4">
                                 <IoMedical className="text-xl opacity-80" />
                                 <p className="font-light">Eastman Medical Center</p>
                             </div>

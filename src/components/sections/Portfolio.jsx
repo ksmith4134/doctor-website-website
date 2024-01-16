@@ -84,10 +84,10 @@ export default function Portfolio() {
                     </ul>
                 </div>
                 {/* PORTFOLIO SAMPLE */}
-                <div className='shrink w-full h-full p-px rounded-2xl bg-gradient-to-b from-gray-400/10 from-0% to-white/0 to-70% overflow-hidden'>
+                <div className='shrink w-full h-full p-px rounded-2xl bg-gradient-to-b from-gray-400/10 from-0% to-gray-400/10 to-70% overflow-hidden'>
                     <div className='w-full h-full bg-gray-950 rounded-2xl'>
                         <div className='w-full h-full rounded-2xl bg-noise bg-repeat'>
-                            <div className='w-full h-full p-16 rounded-2xl bg-gradient-to-b from-[#565A67]/10 to-gray-950 to-[70%]'>
+                            <div className='w-full h-full p-16 rounded-2xl bg-gray-400/5'>
                                 {component}
                             </div>
                         </div>

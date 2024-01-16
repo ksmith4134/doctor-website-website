@@ -14,12 +14,12 @@ export default function CMS() {
             <div className='mt-20 flex gap-12'>
                 <div className='basis-1/2'>
                     <CardLarge>
-                        <div className='flex justify-between items-start gap-2'>
+                        <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
-                                <h4 className='mt-1 text-sm text-gray-600 font-light'>
+                                {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
                                     Content Management
-                                </h4>
-                                <h3 className='mt-4 text-3xl text-gray-200 font-semibold'>
+                                </h4> */}
+                                <h3 className='text-3xl text-gray-200 font-semibold'>
                                     White Coat CMS
                                 </h3>
                             </div>
@@ -33,23 +33,23 @@ export default function CMS() {
                         </p>
                         <Image
                             alt='example image of content management system'
-                            src={"/cms.png"}
+                            src={"/cms-2.png"}
                             width={850}
                             height={497}
-                            className="absolute top-[49%] left-[8%]"
+                            className="mt-4 absolute top-[49%] left-[8%]"
                         />
                     </CardLarge>
                 </div>
 
                 <div className='basis-1/2'>
                     <CardLarge>
-                        <div className='flex justify-between items-start gap-2'>
+                        <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
-                                <h4 className='mt-1 text-sm text-gray-600 font-light'>
+                                {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
                                     Content Creation
-                                </h4>
-                                <h3 className='mt-4 text-3xl text-gray-200 font-semibold'>
-                                    AI Writing Assistant
+                                </h4> */}
+                                <h3 className='text-3xl text-gray-200 font-semibold'>
+                                    AI Assistant
                                 </h3>
                             </div>
                             <div className='flex items-center gap-2 border border-gray-600/20 bg-white/5 text-white px-4 py-1.5 rounded-full'>
@@ -62,16 +62,16 @@ export default function CMS() {
                         </p>
                         <Image
                             alt='using chatGPT to write medical content'
-                            src={"/ai-4.png"}
+                            src={"/ai-7.png"}
                             width={520}
                             height={352}
                             quality={100}
-                            className="absolute bottom-[0%]"
+                            className="absolute top-[52%]"
                         />
                     </CardLarge>
                 </div>
             </div>
-            <div className="absolute bottom-0 w-full h-48 bg-gradient-to-t from-gray-950 from-[4%] to-transparent z-10"></div>
+            <div className="absolute bottom-0 w-full h-0 bg-gradient-to-t from-gray-950 from-[4%] to-transparent z-10"></div>
         </div>
     );
 }

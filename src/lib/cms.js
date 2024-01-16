@@ -2,7 +2,7 @@ export const services = [
     {
         id: 0,
         kicker: "Design",
-        title: "Beautiful<br />& accessible",
+        title: "Beautiful & accessible",
         body: "We build accessible sites for every demographic. But, no one knows your patients as well as you. Leave feedback on new designs in real-time.",
         image: {
             url: "/patterns/stars.png",
@@ -14,7 +14,7 @@ export const services = [
     {
         id: 1,
         kicker: "Development",
-        title: "Eliminate<br />vendor lock-in",
+        title: "Eliminate vendor lock-in",
         body: "We use common tools so you’ll never have trouble finding someone to take over your site should you move to another agency in the future.",
         image: {
             url: "/patterns/flannel.png",
@@ -26,7 +26,7 @@ export const services = [
     {
         id: 2,
         kicker: "Content Creation",
-        title: "Capture once,<br />use forever",
+        title: "Capture once, use forever",
         body: "We can help with photography, video, and document creation. We also help providers use AI to speed up development of patient documentation.",
         image: {
             url: "/patterns/dots.png",
@@ -38,7 +38,7 @@ export const services = [
     {
         id: 3,
         kicker: "Content Management",
-        title: "Simple &<br />fast updates",
+        title: "Simple & fast updates",
         body: "Our content management system helps doctors and advanced practice providers easily add new information and resources to their website.",
         image: {
             url: "/patterns/blocks.png",
@@ -58,6 +58,84 @@ export const services = [
     //         height: 255,
     //     },
     //     backgroundGradient: "top-left",
+    // },
+];
+
+export const services2 = [
+    {
+        id: 0,
+        title: "Design",
+        bullets: [
+            {
+                id: 0,
+                body: "Modern software tools allow us to create beautifully crafted designs.",
+                icon: 'pen'
+            },
+            {
+                id: 1,
+                body: "Leave feedback and comments on new designs in real-time.",
+                icon: 'discuss'
+            },
+        ],
+    },
+    {
+        id: 1,
+        title: "Development",
+        bullets: [
+            {
+                id: 0,
+                body: "Each site is coded using popular programming languages & tools.",
+                icon: 'code'
+            },
+            {
+                id: 1,
+                body: "No vendor lock-in. You own everything.",
+                icon: 'unlock'
+            },
+            {
+                id: 2,
+                body: "Accessibility to meet the needs of every demographic.",
+                icon: 'access'
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: "Content Creation",
+        bullets: [
+            {
+                id: 0,
+                body: "Storyboard, capture, and edit photography and video.",
+                icon: 'image'
+            },
+            {
+                id: 0,
+                body: "Document creation for protocols, treatments, & educational content.",
+                icon: 'document'
+            },
+        ],
+    },
+    // {
+    //     id: 3,
+    //     title: "Content Management",
+    //     bullets: [
+    //         {
+    //             id: 0,
+    //             body: "Easily add new resources and information to your site.",
+    //             icon: 'folder'
+    //         },
+    //     ],
+    // },
+    // {
+    //     id: 4,
+    //     title: "Patient Discovery",
+    //     bullets: [
+    //         {
+    //             id: 0,
+    //             body: "Amplify new patient discovery using search engine optimization.",
+    //             icon: 'search'
+    //         },
+    //     ],
     // },
 ];
 
@@ -217,15 +295,23 @@ export const portfolioReviews = [
 ];
 
 export const portfolioPhotography = [
-    {id: 0, imageUrl: '/portfolio/arnot/photography/photo-0.png', style: ''},
-    {id: 1, imageUrl: '/portfolio/arnot/photography/photo-1.png', style: ''},
-    {id: 2, imageUrl: '/portfolio/arnot/photography/photo-2.png', style: ''},
-    {id: 3, imageUrl: '/portfolio/arnot/photography/photo-3.png', style: ''},
-    {id: 4, imageUrl: '/portfolio/arnot/photography/photo-4.png', style: ''},
-    {id: 5, imageUrl: '/portfolio/arnot/photography/photo-5.png', style: 'col-span-2'},
-    {id: 6, imageUrl: '/portfolio/arnot/photography/photo-6.png', style: ''},
-    {id: 7, imageUrl: '/portfolio/arnot/photography/photo-7.png', style: ''},
-    {id: 8, imageUrl: '/portfolio/arnot/photography/photo-8.png', style: ''},
-    {id: 9, imageUrl: '/portfolio/arnot/photography/photo-9.png', style: ''},
-    {id: 10, imageUrl: '/portfolio/arnot/photography/photo-10.png', style: ''},
+    { id: 0, imageUrl: "/portfolio/arnot/photography/photo-0.png", style: "" },
+    { id: 1, imageUrl: "/portfolio/arnot/photography/photo-1.png", style: "" },
+    { id: 2, imageUrl: "/portfolio/arnot/photography/photo-2.png", style: "" },
+    { id: 3, imageUrl: "/portfolio/arnot/photography/photo-3.png", style: "" },
+    { id: 4, imageUrl: "/portfolio/arnot/photography/photo-4.png", style: "" },
+    {
+        id: 5,
+        imageUrl: "/portfolio/arnot/photography/photo-5.png",
+        style: "col-span-2",
+    },
+    { id: 6, imageUrl: "/portfolio/arnot/photography/photo-6.png", style: "" },
+    { id: 7, imageUrl: "/portfolio/arnot/photography/photo-7.png", style: "" },
+    { id: 8, imageUrl: "/portfolio/arnot/photography/photo-8.png", style: "" },
+    { id: 9, imageUrl: "/portfolio/arnot/photography/photo-9.png", style: "" },
+    {
+        id: 10,
+        imageUrl: "/portfolio/arnot/photography/photo-10.png",
+        style: "",
+    },
 ];

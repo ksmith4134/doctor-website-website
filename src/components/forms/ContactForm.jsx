@@ -11,7 +11,7 @@ const initialState = {
         type: "",
     },
     count: 0,
-    disableThreshold: 2,
+    disable: false,
 };
 
 export default function ContactForm() {
@@ -22,7 +22,7 @@ export default function ContactForm() {
 
     useEffect(() => {
         setInputs({ name: "", email: "" });
-        if(state.count > state.disableThreshold){
+        if(state.disable){
             setDisableForm(true)
         }
     }, [state]);

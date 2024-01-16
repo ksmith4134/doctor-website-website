@@ -1,4 +1,7 @@
-import { FiNavigation, FiPlus, FiMinus, FiUser, FiStar, FiCamera } from "react-icons/fi";
+import { FiNavigation, FiPlus, FiMinus, FiUser, FiStar, FiCamera, FiPenTool, FiCode, FiImage, FiFolder, FiSearch, FiTool  } from "react-icons/fi";
+import { IoAccessibilityOutline, IoDocumentOutline } from "react-icons/io5";
+import { GoCommentDiscussion } from "react-icons/go";
+import { BsUnlock } from "react-icons/bs";
 
 export const ICONS = {
     'compass': FiNavigation,
@@ -7,6 +10,16 @@ export const ICONS = {
     'user': FiUser,
     'star': FiStar,
     'camera': FiCamera,
+    'pen': FiPenTool,
+    'code': FiCode,
+    'image': FiImage,
+    'folder': FiFolder,
+    'search': FiSearch,  
+    'access': IoAccessibilityOutline,  
+    'tool': FiTool,
+    'discuss': GoCommentDiscussion,
+    'unlock': BsUnlock,
+    'document': IoDocumentOutline,
 }
 
 export const BACKGROUND = {
