@@ -100,7 +100,7 @@ export default function Holofoil(props) {
                             {/* cut out */}
                             <div className="mt-4 mx-auto h-4 w-14 rounded-full bg-gray-950 shadow-inner shadow-gray-600/10"></div>
                             {/* body */}
-                            <div className="flex flex-col justify-center items-">
+                            <div className="flex flex-col justify-center items-center mb-20">
                                 <div className="flex justify-center items-center">
                                     <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image-2.png"} width={140} height={140} quality={100} priority />
                                 </div>
@@ -132,10 +132,10 @@ export default function Holofoil(props) {
                                 </div>
                             </div>
                             {/* footer */}
-                            <div className="flex items-center gap-2 mt-1 mb-4">
+                            {/* <div className="flex items-center gap-2 mt-1 mb-4">
                                 <IoMedical className="text-xl opacity-80" />
                                 <p className="font-light">Eastman Medical Center</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ export default function Hero() {
                                 <FaArrowRight className="group-hover:transition group-hover:translate-x-1 group-hover:duration-300 group-hover:ease-in-out" />
                             </button>
                         </Link>
-                        <Link href={"#services"} className="border border-gray-600/20 bg-gray-600/20 text-white px-6 py-4 text-sm rounded-lg group">
+                        <Link href={"#contact"} className="border border-gray-600/20 bg-gray-600/20 text-white px-6 py-4 text-sm rounded-lg group">
                             <button className="flex items-center gap-4 group">
                                 <p>Contact Us</p>
                                 <FaArrowRight className="group-hover:transition group-hover:translate-x-1 group-hover:duration-300 group-hover:ease-in-out" />

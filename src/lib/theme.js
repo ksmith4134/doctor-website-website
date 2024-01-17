@@ -30,6 +30,11 @@ export const BACKGROUND = {
         "bottom-left": "bg-gradient-to-bl",
         "bottom-right": "bg-gradient-to-br",
     },
+    FROM_COLOR: {
+        "primary": "from-portfolio-primary/20",
+        "secondary": "from-portfolio-secondary/20",
+        "tertiary": "from-portfolio-tertiary/30",
+    }
 }
 
 export const FONT_COLORS = {

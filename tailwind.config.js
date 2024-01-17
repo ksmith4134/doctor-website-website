@@ -10,7 +10,7 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                "noise": "url('/patterns/noise-3.png')",
+                "noise": "url('/patterns/noise-5.png')",
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

@@ -1,6 +1,113 @@
 export const services = [
     {
         id: 0,
+        title: "Design",
+        bullets: [
+            {
+                id: 0,
+                body: "Modern software tools allow us to create beautifully crafted designs.",
+                icon: "pen",
+            },
+            {
+                id: 1,
+                body: "Leave feedback and comments on new designs in real-time.",
+                icon: "discuss",
+            },
+        ],
+    },
+    {
+        id: 1,
+        title: "Development",
+        bullets: [
+            {
+                id: 0,
+                body: "Each site is coded using popular programming languages & tools.",
+                icon: "code",
+            },
+            {
+                id: 1,
+                body: "No vendor lock-in. You own everything.",
+                icon: "unlock",
+            },
+            {
+                id: 2,
+                body: "Accessibility to meet the needs of every demographic.",
+                icon: "access",
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: "Content Creation",
+        bullets: [
+            {
+                id: 0,
+                body: "Storyboard, capture, and edit photography and video.",
+                icon: "image",
+            },
+            {
+                id: 1,
+                body: "Document creation for protocols, treatments, & educational content.",
+                icon: "document",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "Content Management",
+        bullets: [
+            {
+                id: 0,
+                body: "Easily add new resources and information to your site.",
+                icon: "folder",
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "Patient Discovery",
+        bullets: [
+            {
+                id: 0,
+                body: "Amplify new patient discovery using search engine optimization.",
+                icon: "search",
+            },
+        ],
+    },
+];
+
+export const portfolio = [
+    {
+        id: 0,
+        title: "Skeletal Navigation",
+        description: "Intuitive condition navigation using an interactive skeleton.",
+        imageUrl: "/portfolio/arnot/skeleton-bg-gradient.jpg",
+        anchorLink: "https://www.arnotortho.com/#body-diagram",
+        imageText: "An interactive skeleton diagram helps direct patients to their condition resource page",
+    },
+    {
+        id: 1,
+        title: "Condition Pages",
+        description: "Simple, yet full customizable condition pages in a wiki-style.",
+        imageUrl: "/portfolio/arnot/condition-bg-gradient-2.jpg",
+        anchorLink: "https://www.arnotortho.com/knee/acl-tear?index=Background",
+        imageText: "Condition pages",
+    },
+    {
+        id: 2,
+        title: "Doctor profiles",
+        description: "Not your typical doctor profiles. Beautiful and extensive.",
+        imageUrl: "/portfolio/arnot/profile-bg-gradient.jpg",
+        anchorLink: "https://www.arnotortho.com/team/bryan-jarvis",
+        imageText: "Doctor profiles",
+    },
+];
+
+/* OLD */
+
+export const servicesOld = [
+    {
+        id: 0,
         kicker: "Design",
         title: "Beautiful & accessible",
         body: "We build accessible sites for every demographic. But, no one knows your patients as well as you. Leave feedback on new designs in real-time.",
@@ -58,84 +165,6 @@ export const services = [
     //         height: 255,
     //     },
     //     backgroundGradient: "top-left",
-    // },
-];
-
-export const services2 = [
-    {
-        id: 0,
-        title: "Design",
-        bullets: [
-            {
-                id: 0,
-                body: "Modern software tools allow us to create beautifully crafted designs.",
-                icon: 'pen'
-            },
-            {
-                id: 1,
-                body: "Leave feedback and comments on new designs in real-time.",
-                icon: 'discuss'
-            },
-        ],
-    },
-    {
-        id: 1,
-        title: "Development",
-        bullets: [
-            {
-                id: 0,
-                body: "Each site is coded using popular programming languages & tools.",
-                icon: 'code'
-            },
-            {
-                id: 1,
-                body: "No vendor lock-in. You own everything.",
-                icon: 'unlock'
-            },
-            {
-                id: 2,
-                body: "Accessibility to meet the needs of every demographic.",
-                icon: 'access'
-            },
-        ],
-    },
-    {
-        id: 2,
-        title: "Content Creation",
-        bullets: [
-            {
-                id: 0,
-                body: "Storyboard, capture, and edit photography and video.",
-                icon: 'image'
-            },
-            {
-                id: 0,
-                body: "Document creation for protocols, treatments, & educational content.",
-                icon: 'document'
-            },
-        ],
-    },
-    // {
-    //     id: 3,
-    //     title: "Content Management",
-    //     bullets: [
-    //         {
-    //             id: 0,
-    //             body: "Easily add new resources and information to your site.",
-    //             icon: 'folder'
-    //         },
-    //     ],
-    // },
-    // {
-    //     id: 4,
-    //     title: "Patient Discovery",
-    //     bullets: [
-    //         {
-    //             id: 0,
-    //             body: "Amplify new patient discovery using search engine optimization.",
-    //             icon: 'search'
-    //         },
-    //     ],
     // },
 ];
 

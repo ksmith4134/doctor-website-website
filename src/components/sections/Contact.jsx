@@ -8,7 +8,7 @@ import ContactForm from "../forms/ContactForm";
 export default function Contact() {
 
     return (
-        <div className='p-px rounded-4xl border border-gray-600/20 bg-noise bg-repeat overflow-hidden'>
+        <div className='p-px rounded-xl border border-gray-600/20 bg-noise bg-repeat overflow-hidden'>
             <div className={`w-full h-full p-2 bg-gray-600/5`}>
                 <div className="flex justify-between items-center gap-20">
 
@@ -22,7 +22,7 @@ export default function Contact() {
                     </div>
 
                     {/* CONTACT FORM */}
-                    <div className='basis-5/12 px-12 py-14 bg-gray-400/10 rounded-3xl'>
+                    <div className='basis-5/12 px-12 py-14 bg-gray-400/10 rounded-lg'>
                         <h3 className='text-3xl font-hind font-semibold text-gray-200'>
                             Contact
                         </h3>

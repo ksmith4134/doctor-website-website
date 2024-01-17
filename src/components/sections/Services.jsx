@@ -1,8 +1,23 @@
-import FlexRow from "../widgets/FlexRow";
-import { services2 } from "@/lib/cms";
-import { FiPlus } from "react-icons/fi";
+"use client";
 
-export default function Services(props) {
+import { useState } from "react";
+import { services } from "@/lib/cms";
+import FlexRow from "../widgets/FlexRow";
+import { FiPlus, FiMinus } from "react-icons/fi";
+
+export default function Services() {
+
+    const partialList = services.slice(0,3);
+
+    const [list, setList] = useState({services: partialList, full: false})
+
+    const expandList = () => {
+        if(list.services.length === services.length) {
+            setList({services: partialList, full: false}) 
+        } else {
+            setList({services, full: true}) 
+        }
+    }
 
     return (
         <>
@@ -22,16 +37,16 @@ export default function Services(props) {
                 <h3 className='basis-1/2'>Our Services</h3>
                 <h3 className='basis-1/2'>How we work</h3>
             </div>
-            {services2.map((service) => (
+            {list.services.map((service) => (
                 <FlexRow
                     key={service.id}
                     title={service.title}
                     bullets={service.bullets}
                 />
             ))}
-            <button className="mt-8 text-gray-300 flex items-center gap-2">
+            <button onClick={expandList} className="mt-8 text-blue-500 flex items-center gap-2">
                 View more
-                <FiPlus />
+                {list.full ? <FiMinus /> : <FiPlus />}
             </button>
         </>
     );

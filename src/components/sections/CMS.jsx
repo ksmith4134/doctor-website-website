@@ -1,10 +1,10 @@
 import Image from "next/image";
-import CardLarge from "../widgets/CardLarge";
+import CardLarge2 from "../widgets/CardLarge2";
 import { BsStars } from "react-icons/bs";
 
 export default function CMS() {
     return (
-        <div className="relative">
+        <div className="relative bg-gradient-radial from-slate-300/20 to-transparent to-[60%]">
             <h2 className='font-hind text-center text-gray-200 text-5xl'>
                 Doctors rarely stand still.
             </h2>
@@ -13,7 +13,7 @@ export default function CMS() {
             </h2>
             <div className='mt-20 flex gap-12'>
                 <div className='basis-1/2'>
-                    <CardLarge>
+                    <CardLarge2 bgColor={"secondary"}>
                         <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
                                 {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
@@ -38,11 +38,11 @@ export default function CMS() {
                             height={497}
                             className="mt-4 absolute top-[49%] left-[8%]"
                         />
-                    </CardLarge>
+                    </CardLarge2>
                 </div>
 
                 <div className='basis-1/2'>
-                    <CardLarge>
+                    <CardLarge2 bgColor={"tertiary"}>
                         <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
                                 {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
@@ -68,7 +68,7 @@ export default function CMS() {
                             quality={100}
                             className="absolute top-[52%]"
                         />
-                    </CardLarge>
+                    </CardLarge2>
                 </div>
             </div>
             <div className="absolute bottom-0 w-full h-0 bg-gradient-to-t from-gray-950 from-[4%] to-transparent z-10"></div>
