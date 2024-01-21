@@ -10,3 +10,18 @@
 .hide-scrollbar::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+@keyframes grow {
+    from {
+        max-height: 0%;
+    }
+    to {
+        max-height: 100%
+    }
+}
+
+.grow {
+    animation-name: grow;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}

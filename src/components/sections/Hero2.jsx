@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <div className="max-w-6xl mx-auto pt-24 bg-gradient-radial from-white/5 to-transparent to-[70%]">
             <div className="flex justify-between items-center gap-8">
-                <div className="basis-6/12">
+                <div className="basis-[60%]">
                     <Link href={'#innovation'} className="border border-gray-600/20 bg-white/5 text-white px-4 py-2 text-xs rounded-full">
                     Bringing AI to patient documentation
                     </Link>
@@ -27,7 +27,7 @@ export default function Hero() {
                         </Link>
                     </div>
                 </div>
-                <div className="flex justify-center items-center">
+                <div className="basis-[40%] flex justify-evenly items-center">
                     <Holofoil />
                 </div>
             </div>

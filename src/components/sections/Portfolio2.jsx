@@ -1,4 +1,5 @@
 import FlexCard from "../widgets/FlexCard";
+import { FaArrowRight } from "react-icons/fa6";
 
 export default function Portfolio2() {
     return (
@@ -13,6 +14,12 @@ export default function Portfolio2() {
                     Ogden Medical Center&apos;s orthopedics department. Check out some{" "}
                     <span className="font-bold">highlights below</span>{" "}or click to learn more.
                 </h5>
+                <a href='https://www.arnotortho.com' target='_blank'>
+                    <button className='mt-8 w-fit flex items-center gap-2 rounded-full bg-portfolio-primary/60 text-white px-4 py-2 text-xs font-semibold hover:bg-portfolio-primary transition-all duration-300 group'>
+                        View the site
+                        <FaArrowRight className='transition-all duration-300 group-hover:translate-x-1' />
+                    </button>
+                </a>
             </div>
             <FlexCard />
         </div>

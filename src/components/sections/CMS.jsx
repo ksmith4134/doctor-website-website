@@ -4,7 +4,7 @@ import { BsStars } from "react-icons/bs";
 
 export default function CMS() {
     return (
-        <div className="relative bg-gradient-radial from-slate-300/20 to-transparent to-[60%]">
+        <div className="relative bg-gradient-radial from-portfolio-tertiary/20 to-transparent to-[60%]">
             <h2 className='font-hind text-center text-gray-200 text-5xl'>
                 Doctors rarely stand still.
             </h2>

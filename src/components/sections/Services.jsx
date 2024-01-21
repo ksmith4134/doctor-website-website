@@ -29,7 +29,7 @@ export default function Services() {
                     Our services were designed to meet the specific needs of healthcare
                     organizations, from{" "}
                     <span className='font-bold'>private practices</span> to{" "}
-                    <span className='font-bold'>hospitals</span>. Find out more below.
+                    <span className='font-bold'>hospitals</span>.
                 </h5>
             </div>
 

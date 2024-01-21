@@ -79,27 +79,27 @@ export const services = [
 export const portfolio = [
     {
         id: 0,
-        title: "Skeletal Navigation",
+        title: "Condition Navigation",
         description: "Intuitive condition navigation using an interactive skeleton.",
-        imageUrl: "/portfolio/arnot/skeleton-bg-gradient.jpg",
+        imageUrl: "/portfolio/arnot/skeleton-7.png",
         anchorLink: "https://www.arnotortho.com/#body-diagram",
         imageText: "An interactive skeleton diagram helps direct patients to their condition resource page",
     },
     {
         id: 1,
-        title: "Condition Pages",
+        title: "Patient Education",
         description: "Simple, yet full customizable condition pages in a wiki-style.",
-        imageUrl: "/portfolio/arnot/condition-bg-gradient-2.jpg",
+        imageUrl: "/portfolio/arnot/condition-8.png",
         anchorLink: "https://www.arnotortho.com/knee/acl-tear?index=Background",
-        imageText: "Condition pages",
+        imageText: "Custom condition pages containing photographs, videos, and downloads",
     },
     {
         id: 2,
         title: "Doctor profiles",
-        description: "Not your typical doctor profiles. Beautiful and extensive.",
-        imageUrl: "/portfolio/arnot/profile-bg-gradient.jpg",
+        description: "Not your typical doctor profiles. Beautiful and professional.",
+        imageUrl: "/portfolio/arnot/profile-8.png",
         anchorLink: "https://www.arnotortho.com/team/bryan-jarvis",
-        imageText: "Doctor profiles",
+        imageText: "Doctor profile pages showcase education, published articles, reviews, and more",
     },
 ];
 

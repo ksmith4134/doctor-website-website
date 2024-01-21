@@ -14,7 +14,7 @@ export default function About() {
             <div className="h-96 basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">
                 <div className="relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
                     {/* BG GRADIENT */}
-                    <div className="absolute w-full h-full top-0 group-hover:bg-gradient-radial group-hover:from-teal-600/60 group-hover:to-transparent group-hover:to-[90%]"></div>
+                    <div className="absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 group-hover:from-teal-600/60 to-transparent to-[90%]"></div>
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">
                         {/* IMAGE */}
                         <div className="z-10 relative w-full h-72 rounded-2xl overflow-hidden">
@@ -30,7 +30,7 @@ export default function About() {
                 </div>
                 <div className="relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
                     {/* BG GRADIENT */}
-                    <div className="absolute w-full h-full top-0 group-hover:bg-gradient-radial group-hover:from-red-600/60 group-hover:to-transparent group-hover:to-[90%]"></div>
+                    <div className="absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 group-hover:from-red-600/60 to-transparent to-[90%]"></div>
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">
                         {/* IMAGE */}
                         <div className="z-10 relative w-full h-72 rounded-2xl overflow-hidden">
