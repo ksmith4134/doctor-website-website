@@ -11,8 +11,10 @@ export default function FlexCard() {
     const [timer, setTimer] = useState(null)
 
     const handleSelected = (id) => {
-        setSelected(id)
-        clearTimeout(timer);
+        if(selected !== id) {
+            setSelected(id)
+            clearTimeout(timer);
+        }
     }
 
     useEffect(() => {
@@ -23,7 +25,7 @@ export default function FlexCard() {
             } else {
                 setSelected(selected+1)
             }
-        }, 5000);
+        }, 10000);
 
         setTimer(time)
 
@@ -33,7 +35,7 @@ export default function FlexCard() {
         <div className='mt-20 flex items-center gap-16 overflow-hidden'>
             <div className='basis-3/12 mt-2 flex flex-col gap-12'>
                 {portfolio.map((item) => (
-                    <div key={item.id} onClick={() => handleSelected(item.id)} className={`relative z-0 text-gray-300 pl-4 pr-6 py-3 border-l hover:cursor-pointer group border-gray-600/40`}>
+                    <div key={item.id} onClick={() => handleSelected(item.id)} className="relative z-0 text-gray-300 pl-4 pr-6 py-3 border-l hover:cursor-pointer group border-gray-600/40">
                         <h5 className={`font-bold ${selected === item.id ? 'text-portfolio-tertiary' : 'group-hover:text-portfolio-tertiary'}`}>
                             {item.title}
                         </h5>
@@ -44,27 +46,33 @@ export default function FlexCard() {
                     </div>
                 ))}
             </div>
-            <div className='basis-9/12 relative w-full aspect-video text-white rounded-xl overflow-hidden group'>
-                <a href={portfolio[selected].anchorLink} target="_blank" className="w-full h-full">
-                    <Image
-                        alt='arnot health image'
-                        src={portfolio[selected].imageUrl}
-                        fill
-                        className='object-cover opacity-100 group-hover:scale-[1.02] transition-all duration-500'
-                    />
-                    <div className="absolute w-full h-full z-20 p-12 bg-gray-950/60">
-                        <div className='flex flex-col justify-end items-start w-full h-full translate-y-10 group-hover:translate-y-0 transition-all duration-500'>
-                            <p className='font-semibold text-balance text-2xl inline-flex items-center gap-3 w-[80%]'>
-                                {portfolio[selected].imageText}
-                            </p>
-                            <div className="mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
-                                Read more
-                                <FaArrowRight className='group-hover:translate-x-1 transition-all duration-300 delay-100' />
+
+            <div className='basis-9/12 relative w-full aspect-video rounded-xl text-white overflow-hidden group'>
+                {portfolio.map((item) => (
+                    <div key={item.id} className={`absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out ${selected === item.id && 'opacity-100'}`}>
+                        <a href={item.anchorLink} target="_blank">
+                            <Image
+                                alt='arnot health image'
+                                src={item.imageUrl}
+                                fill
+                                className={`object-cover group-hover:scale-[1.02] transition-all duration-500`}
+                            />
+                            <div className="absolute w-full h-full z-20 px-10 py-12 bg-gradient-to-r from-gray-950/70 to-transparent">
+                                <div className='flex flex-col justify-end items-start w-full h-full translate-y-10 group-hover:translate-y-0 transition-all duration-500'>
+                                    <p className='font-semibold leading-normal text-balance text-2xl inline-flex items-center gap-3 w-[80%]'>
+                                        {item.imageText}
+                                    </p>
+                                    <div className="mt-4 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-100">
+                                        Read more
+                                        <FaArrowRight className='group-hover:translate-x-1 transition-all duration-300 delay-100' />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </a>
+                ))}
             </div>
+
         </div>
     );
 }

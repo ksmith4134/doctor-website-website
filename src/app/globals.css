@@ -22,6 +22,6 @@
 
 .grow {
     animation-name: grow;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-timing-function: linear;
 }

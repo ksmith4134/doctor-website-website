@@ -97,7 +97,7 @@ export const portfolio = [
         id: 2,
         title: "Doctor profiles",
         description: "Not your typical doctor profiles. Beautiful and professional.",
-        imageUrl: "/portfolio/arnot/profile-8.png",
+        imageUrl: "/portfolio/arnot/profile-7.png",
         anchorLink: "https://www.arnotortho.com/team/bryan-jarvis",
         imageText: "Doctor profile pages showcase education, published articles, reviews, and more",
     },
