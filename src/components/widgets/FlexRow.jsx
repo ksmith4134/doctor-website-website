@@ -20,7 +20,7 @@ export default function FlexRow(props) {
             </div>
             <div className="basis-1/2 flex flex-col gap-8 pr-0">
                 {bullets.map((item) => (
-                    <div key={item.id} className=" flex items-start gap-4">
+                    <div key={item.id} className="flex items-start gap-4">
                         <div className="mt-0.5">
                             <Icon icon={item.icon} />
                         </div>

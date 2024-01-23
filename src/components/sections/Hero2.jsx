@@ -13,15 +13,15 @@ export default function Hero() {
                     <h1 className="mt-12 font-semibold text-7xl leading-tight text-gray-200">Building better doctor websites</h1>
                     <h2 className="mt-8 text-md text-gray-200 leading-relaxed pr-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</h2>
                     <div className="mt-12 flex justify-start items-center gap-8">
-                        <Link href={"#services"} className="border border-gray-600/20 bg-gray-600 text-white px-6 py-4 text-sm rounded-lg group">
-                            <button className="flex items-center gap-4">
-                                <p>Our Services</p>
-                                <FaArrowRight className="group-hover:transition group-hover:translate-x-1 group-hover:duration-300 group-hover:ease-in-out" />
-                            </button>
-                        </Link>
                         <Link href={"#contact"} className="border border-gray-600/20 bg-gray-600/20 text-white px-6 py-4 text-sm rounded-lg group">
                             <button className="flex items-center gap-4 group">
                                 <p>Contact Us</p>
+                                <FaArrowRight className="group-hover:transition group-hover:translate-x-1 group-hover:duration-300 group-hover:ease-in-out" />
+                            </button>
+                        </Link>
+                        <Link href={"#services"} className="text-white py-4 text-sm rounded-lg group">
+                            <button className="flex items-center gap-4">
+                                <p>Our Services</p>
                                 <FaArrowRight className="group-hover:transition group-hover:translate-x-1 group-hover:duration-300 group-hover:ease-in-out" />
                             </button>
                         </Link>

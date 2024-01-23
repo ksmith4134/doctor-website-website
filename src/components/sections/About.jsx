@@ -11,8 +11,8 @@ export default function About() {
                     <p className="mt-4">Both Kevin and David reside in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems. Many of their close family members work in the medical field which inspired them to start creating better online experiences for patients and professionals.</p>
                 </div>
             </div>
-            <div className="h-96 basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">
-                <div className="relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
+            <div className="basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">
+                <div className="h-96 relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
                     {/* BG GRADIENT */}
                     <div className="absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 group-hover:from-teal-600/60 to-transparent to-[90%]"></div>
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">
@@ -28,7 +28,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
+                <div className="h-96 relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
                     {/* BG GRADIENT */}
                     <div className="absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 group-hover:from-red-600/60 to-transparent to-[90%]"></div>
                     <div className="p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20">

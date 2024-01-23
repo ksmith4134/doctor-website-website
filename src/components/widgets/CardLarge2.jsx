@@ -2,9 +2,7 @@
 import { BACKGROUND } from "@/lib/theme";
 
 
-export default function CardLarge({children, bgColor}) {
-
-    const color = BACKGROUND.FROM_COLOR[bgColor];
+export default function CardLarge({children}) {
 
     return (
         <div className='h-[530px] rounded-2xl backdrop-blur-[64px]  bg-white/5 border-2 border-white/5 overflow-hidden'>

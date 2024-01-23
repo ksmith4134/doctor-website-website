@@ -32,14 +32,14 @@ export default function FlexCard() {
     }, [selected])
 
     return (
-        <div className='mt-20 flex items-center gap-16 overflow-hidden'>
+        <div className='mt-16 flex items-center gap-16 overflow-hidden'>
             <div className='basis-3/12 mt-2 flex flex-col gap-12'>
                 {portfolio.map((item) => (
                     <div key={item.id} onClick={() => handleSelected(item.id)} className="relative z-0 text-gray-300 pl-4 pr-6 py-3 border-l hover:cursor-pointer group border-gray-600/40">
                         <h5 className={`font-bold ${selected === item.id ? 'text-portfolio-tertiary' : 'group-hover:text-portfolio-tertiary'}`}>
                             {item.title}
                         </h5>
-                        <p className='mt-1 font-light text-sm'>
+                        <p className='mt-1 font-light text-sm text-balance'>
                             {item.description}
                         </p>
                         <div className={`absolute z-20 w-px h-full top-0 left-0 ${selected === item.id ? 'bg-portfolio-tertiary grow' : 'bg-transparent'}`}></div>
@@ -47,9 +47,9 @@ export default function FlexCard() {
                 ))}
             </div>
 
-            <div className='basis-9/12 relative w-full aspect-video rounded-xl text-white overflow-hidden group'>
+            <div className='basis-9/12 relative w-full rounded-xl aspect-video text-white overflow-hidden group'>
                 {portfolio.map((item) => (
-                    <div key={item.id} className={`absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-1000 ease-in-out ${selected === item.id && 'opacity-100'}`}>
+                    <div key={item.id} className={`absolute top-0 left-0 w-full h-full opacity-0 transition-opacity duration-[1500ms] ease-in-out ${selected === item.id && 'opacity-100'}`}>
                         <a href={item.anchorLink} target="_blank">
                             <Image
                                 alt='arnot health image'
@@ -57,7 +57,7 @@ export default function FlexCard() {
                                 fill
                                 className={`object-cover group-hover:scale-[1.02] transition-all duration-500`}
                             />
-                            <div className="absolute w-full h-full z-20 px-10 py-12 bg-gradient-to-r from-gray-950/70 to-transparent">
+                            <div className="absolute w-full h-full z-20 px-10 py-12 bg-gradient-to-r from-gray-950/70 to-gray-950/0 to-[100%]">
                                 <div className='flex flex-col justify-end items-start w-full h-full translate-y-10 group-hover:translate-y-0 transition-all duration-500'>
                                     <p className='font-semibold leading-normal text-balance text-2xl inline-flex items-center gap-3 w-[80%]'>
                                         {item.imageText}

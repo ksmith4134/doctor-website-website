@@ -23,6 +23,9 @@ module.exports = {
                 "4xl": "32px",
             },
             colors: {
+                "main-primary": "#A6D5EA",
+                "main-secondary": "#6E8E9D",
+                "main-tertiary": "#425371",
                 "portfolio-primary": "#437FB8",
                 "portfolio-secondary": "#3EB0B0",
                 "portfolio-tertiary": "#E69886",

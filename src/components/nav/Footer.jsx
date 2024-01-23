@@ -10,10 +10,10 @@ export default function Footer() {
         <MaxWidth>
             <footer className="mt-24 w-full py-20">
                 <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
-                <div className="pt-16 text-white text-sm flex flex-col justify-center items-center text-center">
+                <div className="pt-16 text-white text-sm flex flex-col justify-center items-start">
                     <p className="font-bold uppercase">Revere</p>
-                    <div className="pt-8 inline-flex items-center text-gray-300">
-                        <FaRegCopyright /> <span>&nbsp; {year}</span>
+                    <div className="pt-8 inline-flex items-center">
+                        <FaRegCopyright /> <span>&nbsp;{year}</span>
                     </div>
                     <p className="mt-1">Revered Campaigns, LLC</p>
                     <ul className="pt-8 space-y-2 text-xs text-gray-300">
