@@ -13,7 +13,7 @@ export default function Contact() {
 
                     {/* TESTIMONIAL */}
                     <div className='basis-7/12 p-8 text-center flex flex-col items-center'>
-                        <Image alt="quotation mark icon" src={"/quote-5.png"} width={60} height={93} />
+                        <Image alt="quotation mark icon" src={"/quote-5.png"} width={60} height={93} className="opacity-60" />
                         <p className="mt-12 text-lg text-gray-300 font-light text-balance">Revere delivered a perfect website that has greatly benefited our physicians, advanced practice providers, and patients. Thank you, Revere, for your dedication to this project!</p>
                         <Image alt="arnot health hospital logo" src={'/portfolio/arnot/logo.svg'} width={200} height={200} className="mt-12 mx-auto opacity-80" />
                     </div>

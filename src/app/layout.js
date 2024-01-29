@@ -14,9 +14,7 @@ export default function RootLayout({ children }) {
         <html lang='en' className="scroll-smooth">
             <body className={`bg-gray-950 ${inter.className} ${hind_siliguri.variable}`}>
                 <Header />
-                
                     {children}
-                
                 <Footer />
             </body>
         </html>

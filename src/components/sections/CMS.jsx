@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CardLarge2 from "../widgets/CardLarge2";
+import FeatureCard from "../widgets/FeatureCard";
 import { BsStars } from "react-icons/bs";
 
 export default function CMS() {
@@ -13,12 +13,9 @@ export default function CMS() {
             </h2>
             <div className='mt-20 flex gap-12'>
                 <div className='basis-1/2'>
-                    <CardLarge2>
+                    <FeatureCard>
                         <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
-                                {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
-                                    Content Management
-                                </h4> */}
                                 <h3 className='text-3xl text-gray-200 font-semibold'>
                                     White Coat CMS
                                 </h3>
@@ -38,16 +35,13 @@ export default function CMS() {
                             height={497}
                             className="mt-4 absolute top-[49%] left-[8%]"
                         />
-                    </CardLarge2>
+                    </FeatureCard>
                 </div>
 
                 <div className='basis-1/2'>
-                    <CardLarge2>
+                    <FeatureCard>
                         <div className='pt-2 flex justify-between items-center gap-2'>
                             <div>
-                                {/* <h4 className='mt-1 text-sm text-gray-600 font-light'>
-                                    Content Creation
-                                </h4> */}
                                 <h3 className='text-3xl text-gray-200 font-semibold'>
                                     AI Assistant
                                 </h3>
@@ -68,7 +62,7 @@ export default function CMS() {
                             quality={100}
                             className="absolute top-[52%]"
                         />
-                    </CardLarge2>
+                    </FeatureCard>
                 </div>
             </div>
             <div className="absolute bottom-0 w-full h-0 bg-gradient-to-t from-gray-950 from-[4%] to-transparent z-10"></div>

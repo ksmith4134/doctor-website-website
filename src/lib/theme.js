@@ -22,21 +22,6 @@ export const ICONS = {
     'document': IoDocumentOutline,
 }
 
-export const BACKGROUND = {
-    GRADIENT_DIRECTION: {
-        "radial": "bg-gradient-radial",
-        "top-left": "bg-gradient-to-tl",
-        "top-right": "bg-gradient-to-tr",
-        "bottom-left": "bg-gradient-to-bl",
-        "bottom-right": "bg-gradient-to-br",
-    },
-    FROM_COLOR: {
-        "primary": "from-portfolio-primary/20",
-        "secondary": "from-portfolio-secondary/20",
-        "tertiary": "from-portfolio-tertiary/30",
-    }
-}
-
 export const FONT_COLORS = {
     "success": "text-emerald-300",
     "error": "text-red-400",
