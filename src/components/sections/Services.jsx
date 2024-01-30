@@ -97,10 +97,10 @@ export default function Services() {
     }
 
     return (
-        <>
-            <div className='flex justify-between items-start gap-8'>
-                <h1 className='basis-1/2 font-hind font-normal text-6xl leading-tight text-gray-300'>
-                    Healthcare<br />big and small.
+        <div>
+            {/* <div className='flex justify-start items-start gap-8'>
+                <h1 className='font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>
+                    Healthcare <span className="font-bold">big</span> and <span className="font-bold">small</span>
                 </h1>
                 <h5 className='basis-1/2 mt-2 text-xl font-extralight text-gray-300 leading-relaxed'>
                     Our services were designed from the ground up to meet the specific needs of healthcare
@@ -108,9 +108,9 @@ export default function Services() {
                     <span className='font-bold'>private practices</span> to{" "}
                     <span className='font-bold'>hospitals</span>.
                 </h5>
-            </div>
+            </div> */}
 
-            <div className='mt-16 py-5 flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
+            <div className='py-5 flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
                 <h3 className='basis-1/2'>Our Services</h3>
                 <h3 className='basis-1/2'>How we work</h3>
             </div>
@@ -125,6 +125,6 @@ export default function Services() {
                 View more
                 {list.full ? <FiMinus /> : <FiPlus />}
             </button>
-        </>
+        </div>
     );
 }

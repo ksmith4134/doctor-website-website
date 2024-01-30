@@ -5,10 +5,10 @@ export default function About() {
     return (
         <div className="flex justify-center items-center gap-20">
             <div className="basis-5/12">
-                <h2 className="font-hind font-semibold text-5xl leading-snug text-gray-200">About Us</h2>
+                <h2 className="font-hind text-6xl leading-tight text-gray-300">About Us</h2>
                 <div className="text-gray-200 font-extralight">
                     <p className="mt-4">Revered was founded by brothers Kevin and David Smith. They share a combined experience of over 20 years in web design and development.</p>
-                    <p className="mt-4">Both Kevin and David reside in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems. Many of their close family members work in the medical field which inspired them to start creating better online experiences for patients and professionals.</p>
+                    <p className="mt-4">Both Kevin and David reside with their families in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems.</p>
                 </div>
             </div>
             <div className="basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">

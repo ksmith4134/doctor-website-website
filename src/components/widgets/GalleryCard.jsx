@@ -53,7 +53,7 @@ export default function GalleryCard() {
 
 
     return (
-        <div className='mt-12 flex items-center gap-16'>
+        <div className='mt-16 flex items-center gap-16'>
             <div className='basis-3/12 mt-2 flex flex-col gap-12'>
                 {portfolio.map((item) => (
                     <div

@@ -12,10 +12,12 @@ export default function Contact() {
                 <div className="p-2 flex justify-between items-center gap-20 bg-custom-gradient-1">
 
                     {/* TESTIMONIAL */}
-                    <div className='basis-7/12 p-8 text-center flex flex-col items-center'>
-                        <Image alt="quotation mark icon" src={"/quote-5.png"} width={60} height={93} className="opacity-60" />
-                        <p className="mt-12 text-lg text-gray-300 font-light text-balance">Revere delivered a perfect website that has greatly benefited our physicians, advanced practice providers, and patients. Thank you, Revere, for your dedication to this project!</p>
-                        <Image alt="arnot health hospital logo" src={'/portfolio/arnot/logo.svg'} width={200} height={200} className="mt-12 mx-auto opacity-80" />
+                    <div className='basis-7/12 p-16 flex flex-col items-center gap-8'>
+                        <h3 className='text-2xl font-hind font-semibold text-gray-200'>
+                            Thank you Revere!
+                        </h3>
+                        <p className="text-md text-gray-300 text-center text-balance">&quot;Revere delivered a perfect website that has greatly benefited our physicians, advanced practice providers, and most importantly, our patients. Thank you, Revere, for your dedication to delivering a successful project!&quot;</p>
+                        <Image alt="arnot health hospital logo" src={'/portfolio/arnot/logo.svg'} width={200} height={200} className="mt-4 opacity-80" />
                     </div>
 
                     {/* CONTACT FORM */}
