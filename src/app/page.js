@@ -10,10 +10,10 @@ import MaxWidth from "@/components/utils/MaxWidth";
 export default function Home() {
     return (
         <main>
-            <div id="hero">
-                <Hero />
-            </div>
             <MaxWidth>
+                <div id="hero">
+                    <Hero />
+                </div>
                 <div id="services" className="pt-60">
                     <Services />
                 </div>

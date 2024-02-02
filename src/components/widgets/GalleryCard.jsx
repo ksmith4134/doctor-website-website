@@ -53,8 +53,8 @@ export default function GalleryCard() {
 
 
     return (
-        <div className='mt-16 flex items-center gap-16'>
-            <div className='basis-3/12 mt-2 flex flex-col gap-12'>
+        <div className='mt-16 flex flex-col lg:flex-row items-center gap-8 xl:gap-16'>
+            <div className='basis-3/12 mt-2 flex flex-row lg:flex-col gap-8 lg:gap-12'>
                 {portfolio.map((item) => (
                     <div
                         key={item.id}
@@ -83,7 +83,7 @@ export default function GalleryCard() {
                     </div>
                 ))}
             </div>
-            <div className='basis-9/12 w-full aspect-video rounded-2xl border-2 border-white/5 bg-custom-gradient-4'>
+            <div className='basis-9/12 shrink-0 w-full aspect-video rounded-2xl border-2 border-white/5 bg-custom-gradient-4'>
                 <div className='relative bg-noise bg-repeat rounded-2xl w-full h-full overflow-hidden'>
                     {portfolio.map((item) => (
                         <div key={item.id} className={`absolute p-12 w-full h-full opacity-0 transition-opacity duration-[1500ms] ease-in-out ${selected === item.id && 'opacity-100'}`}>

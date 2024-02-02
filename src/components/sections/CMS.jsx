@@ -11,16 +11,16 @@ export default function CMS() {
             <h2 className='mt-2 font-hind text-center text-gray-200 text-5xl font-bold'>
                 Neither do we.
             </h2>
-            <div className='mt-20 flex gap-12'>
+            <div className='mt-20 flex flex-col md:flex-row gap-12'>
                 <div className='basis-1/2'>
                     <FeatureCard>
-                        <div className='pt-2 flex justify-between items-center gap-2'>
-                            <div>
+                        <div className='pt-2 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2'>
+                            <div className="order-2 lg:order-1 mt-4 lg:mt-0">
                                 <h3 className='text-3xl text-gray-200 font-semibold'>
                                     White Coat CMS
                                 </h3>
                             </div>
-                            <div className='flex items-center gap-2 border border-gray-600/20 bg-white/5 text-white px-4 py-1.5 rounded-full'>
+                            <div className='order-1 lg:order-2 shrink-0 flex items-center gap-2 border border-gray-600/20 bg-white/5 text-white px-4 py-1.5 rounded-full'>
                                 <BsStars className="rotate-90" />
                                 <p className="text-xs">coming soon</p>
                             </div>
@@ -33,20 +33,20 @@ export default function CMS() {
                             src={"/cms-2.png"}
                             width={850}
                             height={497}
-                            className="mt-4 absolute top-[49%] left-[8%]"
+                            className="mt-4 absolute -bottom-[10%] left-[10%]"
                         />
                     </FeatureCard>
                 </div>
 
                 <div className='basis-1/2'>
                     <FeatureCard>
-                        <div className='pt-2 flex justify-between items-center gap-2'>
-                            <div>
+                        <div className='pt-2 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-2'>
+                            <div className="order-2 lg:order-1 mt-4 lg:mt-0">
                                 <h3 className='text-3xl text-gray-200 font-semibold'>
                                     AI Assistant
                                 </h3>
                             </div>
-                            <div className='flex items-center gap-2 border border-gray-600/20 bg-white/5 text-white px-4 py-1.5 rounded-full'>
+                            <div className='order-1 lg:order-2 shrink-0 flex items-center gap-2 border border-gray-600/20 bg-white/5 text-white px-4 py-1.5 rounded-full'>
                                 <BsStars className="rotate-90" />
                                 <p className="text-xs">coming soon</p>
                             </div>
@@ -60,7 +60,7 @@ export default function CMS() {
                             width={520}
                             height={352}
                             quality={100}
-                            className="absolute top-[52%]"
+                            className="absolute -bottom-[6%]"
                         />
                     </FeatureCard>
                 </div>

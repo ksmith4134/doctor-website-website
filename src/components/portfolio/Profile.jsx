@@ -19,8 +19,8 @@ const education = [
 
 export default function Profile() {
     return (
-        <div className='w-full h-full flex justify-between items-start'>
-            <div className='relative w-[400px] shrink-0 rounded-lg border border-portfolio-primary/0 bg-noise bg-repeat text-gray-200 overflow-hidden'>
+        <div className='w-full h-full flex justify-between items-start gap-8'>
+            <div className='relative basis-7/12 rounded-lg border border-portfolio-primary/0 bg-noise bg-repeat text-gray-200 overflow-hidden'>
                 <div className="p-12 bg-portfolio-primary/10">
                     <h3 className="font-semibold text-2xl">Credentials</h3>
                     {credentials.map((item) => (
@@ -34,7 +34,7 @@ export default function Profile() {
                     <Image alt="award icon" src={'/portfolio/arnot/award.svg'} width={80} height={80} className="absolute top-8 right-8" />
                 </div>
             </div>
-            <div className='pt-12'>
+            <div className='pt-12 shrink-0'>
                 <h3 className="-ml-2 mb-10 font-semibold text-2xl text-gray-200">Education</h3>
                 {education.map((item) => (
                     <div key={item.id} className="mt-3 mb-2 last:pb-0 pb-8 border-l border-gray-400/30">

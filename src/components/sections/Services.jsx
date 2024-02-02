@@ -11,7 +11,7 @@ const services = [
         bullets: [
             {
                 id: 0,
-                body: "Modern software tools allow us to create beautifully crafted designs.",
+                body: "Modern tools help create beautifully crafted designs.",
                 icon: "pen",
             },
             {
@@ -110,7 +110,9 @@ export default function Services() {
                 </h5>
             </div> */}
 
-            <div className='py-5 flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
+            <h2 className='block md:hidden mb-6 font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>Our Services</h2>
+
+            <div className='hidden py-5 md:flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
                 <h3 className='basis-1/2'>Our Services</h3>
                 <h3 className='basis-1/2'>How we work</h3>
             </div>

@@ -19,9 +19,6 @@ module.exports = {
                 inter: ["var(--font-inter)"],
                 hind: ["var(--font-hind)"]
             },
-            borderRadius: {
-                "4xl": "32px",
-            },
             colors: {
                 "main-primary": "#A6D5EA",
                 "main-secondary": "#6E8E9D",

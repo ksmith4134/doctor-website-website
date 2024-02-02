@@ -19,7 +19,9 @@ export default function Portfolio() {
                     </button>
                 </a>
             </div>
-            <GalleryCard />
+            <div className="hidden md:block">
+                <GalleryCard />
+            </div>
         </>
     );
 }

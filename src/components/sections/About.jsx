@@ -3,15 +3,15 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="flex justify-center items-center gap-20">
+        <div className="flex flex-col lg:flex-row justify-center items-start lg:items-center gap-16">
             <div className="basis-5/12">
                 <h2 className="font-hind text-6xl leading-tight text-gray-300">About Us</h2>
-                <div className="text-gray-200 font-extralight">
+                <div className="text-gray-200 font-extralight text-balance">
                     <p className="mt-4">Revered was founded by brothers Kevin and David Smith. They share a combined experience of over 20 years in web design and development.</p>
                     <p className="mt-4">Both Kevin and David reside with their families in Greater Rochester, NY which is world renowned for its healthcare education and hospital systems.</p>
                 </div>
             </div>
-            <div className="basis-7/12 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex gap-8">
+            <div className="w-full lg:basis-7/12 shrink-0 bg-gradient-radial from-white/5 to-white/0 to-[60%] flex flex-col sm:flex-row gap-8">
                 <div className="h-96 relative basis-1/2 bg-noise bg-repeat rounded-3xl border border-gray-600/20 overflow-hidden group">
                     {/* BG GRADIENT */}
                     <div className="absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 group-hover:from-teal-600/60 to-transparent to-[90%]"></div>
