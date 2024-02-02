@@ -9,7 +9,7 @@ export default function FlexRow(props) {
 
 
     return (
-        <div className='py-10 flex flex-col md:flex-row justify-between items-start gap-8 text-gray-300 border-b border-gray-600/80'>
+        <div className='py-16 md:py-10 flex flex-col md:flex-row justify-between items-start gap-8 text-gray-300/90 border-b border-gray-600/80'>
             <div className="basis-1/2">
                 <h3 className="text-4xl font-hind font-light">{title}</h3>
             </div>

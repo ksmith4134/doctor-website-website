@@ -6,12 +6,12 @@ export default function Header() {
         <header className="font-hind w-full py-3 sticky top-0 z-50 backdrop-blur-xl bg-gray-950/50">
             <MaxWidth>
                 <nav className="flex items-center justify-between">
-                    <div className="text-sm text-white font-bold uppercase">
+                    <div className="text-sm text-gray-300 font-bold uppercase">
                         <Link href="/">
                             Revere
                         </Link>
                     </div>
-                    <ul className="flex items-center gap-12 text-white text-sm">
+                    <ul className="flex items-center gap-12 text-gray-300 text-sm">
                         <li className="hidden md:block">
                             <Link href="/">
                                 <span>Home</span>

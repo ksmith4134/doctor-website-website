@@ -53,7 +53,7 @@ const services = [
             },
             {
                 id: 1,
-                body: "Document creation for protocols, treatments, & educational content.",
+                body: "Document creation for protocols, treatments, & more.",
                 icon: "document",
             },
         ],
@@ -110,12 +110,12 @@ export default function Services() {
                 </h5>
             </div> */}
 
-            <h2 className='block md:hidden mb-6 font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>Our Services</h2>
+            {/* <h2 className='block md:hidden mb-6 font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>Our Services</h2>
 
             <div className='hidden py-5 md:flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
                 <h3 className='basis-1/2'>Our Services</h3>
                 <h3 className='basis-1/2'>How we work</h3>
-            </div>
+            </div> */}
             {list.services.map((service) => (
                 <FlexRow
                     key={service.id}
