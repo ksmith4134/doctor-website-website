@@ -1,5 +1,12 @@
 import GalleryCard from "../widgets/GalleryCard";
 import { FaArrowRight } from "react-icons/fa6";
+import Image from "next/image";
+
+const circles = [
+    { id: 0, label: "elbow", position: "bottom-[13%] left-[3%]" },
+    { id: 1, label: "hip", position: "-bottom-[2%] right-[24%]" },
+    { id: 2, label: "shoulder", position: "top-[32%] right-[20%]" },
+];
 
 export default function Portfolio() {
     return (
@@ -27,6 +34,28 @@ export default function Portfolio() {
                     </button>
                 </a>
             </div>
+
+            <div className='md:hidden mt-16 relative overflow-hidden mx-auto flex justify-center'>
+                <div className="w-fit relative">
+                    <Image
+                        src={"/portfolio/arnot/Skeleton_Lg_800x920.png"}
+                        alt='skeleton diagram highlighting major joints'
+                        width={360}
+                        height={920}
+                        quality={100}
+                        className="opacity-80"
+                    />
+                    {circles.map((item) => (
+                        <button
+                            key={item.id}
+                            className={`absolute z-10 max-w-24 w-[24%] aspect-square rounded-full border-2 border-portfolio-primary/20 bg-portfolio-primary/40 shadow-inner shadow-portfolio-primary/40 ${item.position}`}
+                        ></button>
+                    ))}
+                </div>
+                <div className="absolute z-20 w-full h-full bg-gradient-to-t from-gray-950 from-[2%]"></div>
+            </div>
+
+
         </div>
     );
 }

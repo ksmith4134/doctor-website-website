@@ -24,7 +24,7 @@ export default function Hero() {
                         </Link>
                     </div>
                 </div>
-                <div className="basis-[40%] flex justify-evenly items-center mt-12 md:mt-0">
+                <div className="md:basis-[40%] flex justify-center md:justify-evenly items-center mt-12 md:mt-0">
                     <Holofoil />
                 </div>
             </div>

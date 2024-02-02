@@ -9,10 +9,10 @@ export default function CMS() {
                 <BsStars className="rotate-90" />
                 <p className="text-xs">coming soon</p>
             </div>
-            <h2 className='mt-8 font-hind text-center text-gray-300/90 text-6xl'>
+            <h2 className='mt-8 font-hind text-center text-gray-300/90 text-6xl text-balance'>
                 Doctors rarely stand still.
             </h2>
-            <h2 className='mt-2 font-hind text-center text-gray-300/90 text-6xl font-bold'>
+            <h2 className='mt-2 font-hind text-center text-gray-300/90 text-6xl font-bold text-balance'>
                 Neither do we.
             </h2>
             <div className='mt-20 flex flex-col md:flex-row gap-12'>
@@ -29,7 +29,7 @@ export default function CMS() {
                             src={"/cms-2.png"}
                             width={850}
                             height={497}
-                            className="mt-4 absolute -bottom-[6%] left-[10%] opacity-90"
+                            className="hidden md:block mt-4 absolute -bottom-[6%] left-[10%] opacity-90"
                         />
                     </FeatureCard>
                 </div>
@@ -48,7 +48,7 @@ export default function CMS() {
                             width={500}
                             height={352}
                             quality={100}
-                            className="absolute -bottom-[0%] opacity-90"
+                            className="hidden md:block absolute -bottom-[0%] opacity-90"
                         />
                     </FeatureCard>
                 </div>

@@ -103,10 +103,10 @@ export default function Holofoil(props) {
                                 <div className="flex justify-center items-center">
                                     <Image alt="picture of a doctor on an ID badge" src={"/holofoil/doctor-image-2.png"} width={140} height={140} quality={100} priority />
                                 </div>
-                                <div className="mt-6">
+                                <div className="mt-8 -mb-4">
                                     <h4 className="text-center text-xl font-bold">Doogie Howser, MD</h4>
                                     <h5 className="text-center mt-1 text-sm font-light">Attending Physician</h5>
-                                    <div className="mt-10 flex gap-10">
+                                    <div className="mt-12 flex gap-10">
                                         <div className="flex flex-col justify-center items-between gap-6 text-sm">
                                             <div>
                                                 <p className="font-bold">ID No</p>

@@ -14,19 +14,19 @@ export default function Home() {
                 <div id="hero">
                     <Hero />
                 </div>
-                <div id="services" className="pt-40">
+                <div id="services" className="pt-48">
                     <Services />
                 </div>
-                <div id="work" className="pt-60">
+                <div id="work" className="pt-48">
                     <Portfolio />
                 </div>
-                <div id="innovation" className="pt-60">
+                <div id="innovation" className="pt-48">
                     <CMS />
                 </div>
-                <div id="about" className="pt-60">
+                <div id="about" className="pt-48">
                     <About />
                 </div>
-                <div id="contact" className="pt-60">
+                <div id="contact" className="pt-48">
                     <Contact />
                 </div>
             </MaxWidth>
