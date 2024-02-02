@@ -29,7 +29,7 @@ export function SubmitButton({ message, disableForm }) {
                 type="submit"
                 aria-disabled={pending}
                 disabled={pending}
-                className='mt-14 w-full h-12 rounded-md text-sm text-center bg-gray-700 hover:bg-gray-600'
+                className='mt-10 w-full h-12 rounded-md text-sm text-center bg-gray-700 hover:bg-gray-600'
             >
                 {pending ? "Submitting..." : "Submit"}
             </button>

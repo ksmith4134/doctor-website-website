@@ -28,8 +28,8 @@ export default function ContactForm() {
     }, [state]);
 
     return (
-        <form action={formAction} id='contact' className='mt-12 text-gray-200'>
-            <label htmlFor='name' className='text-xs'>
+        <form action={formAction} id='contact' className='mt-12 text-gray-300/90'>
+            <label htmlFor='name' className='text-xs ml-1'>
                 Name
             </label>
             <br />
@@ -47,12 +47,12 @@ export default function ContactForm() {
                 autoComplete='off'
                 required
                 disabled={disableForm}
-                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-400'
+                className='w-full mt-1 p-2 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-500/40 focus:outline-none focus:border-gray-400'
             ></input>
             <br />
             <br />
 
-            <label htmlFor='email' className='text-xs'>
+            <label htmlFor='email' className='text-xs ml-1'>
                 Email
             </label>
             <br />
@@ -68,7 +68,7 @@ export default function ContactForm() {
                 autoComplete='off'
                 required
                 disabled={disableForm}
-                className='w-full h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border-b border-gray-500/60 focus:outline-none focus:border-gray-400'
+                className='w-full mt-1 p-2 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-500/40 focus:outline-none focus:border-gray-400'
             ></input>
             <br />
 

@@ -21,7 +21,7 @@ export default function Contact() {
                     </div>
 
                     {/* CONTACT FORM */}
-                    <div className='mt-16 lg:mt-0 basis-5/12 shrink-0 rounded-2xl backdrop-blur-[64px] bg-white/5 border border-white/5 max-w-96 overflow-hidden'>
+                    <div className='mt-16 lg:mt-0 basis-5/12 shrink-0 rounded-2xl backdrop-blur-[64px] bg-white/5 border border-white/5 max-w-lg overflow-hidden'>
                         <div className="p-8 sm:p-12 w-full h-full rounded-2xl bg-noise bg-repeat">
                             <h3 className='text-3xl font-hind font-medium text-gray-300/90'>
                                 Contact
