@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /private/
+Disallow: /legal/
+
+Sitemap: https://reveredcampaigns.com/sitemap.xml
+Sitemap: https://www.reveredcampaigns.com/sitemap.xml

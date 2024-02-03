@@ -6,7 +6,10 @@ import Footer from "@/components/nav/Footer";
 
 export const metadata = {
     title: "Revered",
-    description: "Homepage for a web development agency specializing in websites for healthcare.",
+    description: "A web development agency creating healthcare websites for doctors and hospitals.",
+    keywords: ['doctor websites', 'medical websites', 'hospital websites', 'web development'],
+    authors: [{name: 'Kevin Smith'}],
+    creator: 'Kevin Smith'
 };
 
 export default function RootLayout({ children }) {

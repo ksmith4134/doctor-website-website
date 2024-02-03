@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaCircleInfo } from "react-icons/fa6";
 import { ICONS } from "@/lib/theme";
+import skeleton from "../../../public/portfolio/arnot/skeleton.png"
 
 const dropdown = [
     { id: 0, label: "Elbow", },
@@ -59,9 +60,10 @@ export default function Navigation() {
             </div>
             <div className='-mt-4 relative overflow-hidden'>
                 <Image
-                    src={"/portfolio/arnot/skeleton.png"}
-                    alt='skeleton diagram highlighting major joints'
+                    src={skeleton}
+                    alt='skeleton diagram highlighting major joints 312x819, 0.381x'
                     width={300}
+                    style={{ height: "auto" }}
                     height={391}
                     quality={100}
                     className="opacity-80"
