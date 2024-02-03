@@ -26,8 +26,11 @@ module.exports = {
                 "portfolio-primary": "#437FB8",
                 "portfolio-secondary": "#3EB0B0",
                 "portfolio-tertiary": "#E69886",
-            }
+            },
         },
     },
-    plugins: [],
+    darkMode: 'class',
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 };

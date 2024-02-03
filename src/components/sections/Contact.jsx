@@ -14,9 +14,9 @@ export default function Contact() {
                     {/* TESTIMONIAL */}
                     <div className='basis-7/12 p-0 lg:p-16 flex flex-col items-center gap-8'>
                         <h3 className='pt-4 lg:pt-0 text-3xl font-hind font-medium text-gray-300/90 text-center'>
-                            Thank you Revere!
+                            Thank you Revered!
                         </h3>
-                        <p className="max-w-xl text-md text-gray-300 text-center text-balance">&quot;Revere delivered a perfect website that has greatly benefited our physicians, advanced practice providers, and most importantly, our patients. Thank you, Revere, for your dedication to delivering a successful project!&quot;</p>
+                        <p className="max-w-xl text-md text-gray-300 text-center text-balance">&quot;Revered delivered a perfect website that has greatly benefited our physicians, advanced practice providers, and most importantly, our patients. Thank you, Revered, for your dedication to delivering a successful project!&quot;</p>
                         <Image alt="arnot health hospital logo" src={'/portfolio/arnot/logo.svg'} width={200} height={200} className="mt-4 opacity-80" />
                     </div>
 

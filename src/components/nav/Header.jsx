@@ -8,7 +8,7 @@ export default function Header() {
                 <nav className="flex items-center justify-between">
                     <div className="text-sm text-gray-300 font-bold uppercase">
                         <Link href="/">
-                            Revere
+                            Revered
                         </Link>
                     </div>
                     <ul className="flex items-center gap-12 text-gray-300 text-sm">
