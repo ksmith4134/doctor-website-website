@@ -2,9 +2,11 @@ import Link from "next/link";
 import Holofoil from "../widgets/holofoil/Holofoil";
 import { FaArrowRight } from "react-icons/fa6";
 
+// bg-gradient-radial from-white/5 to-transparent to-[70%]
+
 export default function Hero() {
     return (
-        <div className="pt-8 md:pt-20 bg-gradient-radial from-white/5 to-transparent to-[70%]">
+        <div className="pt-8 md:pt-20 bg-gradient-radial from-main-primary/[0.07] to-transparent to-[50%]">
             <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
                 <div className="basis-[60%]">
                     <h1 className="text-center md:text-left font-semibold text-5xl md:text-7xl leading-tight md:leading-tight text-gray-300/90 text-balance">Building better doctor websites</h1>

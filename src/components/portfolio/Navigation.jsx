@@ -61,7 +61,7 @@ export default function Navigation() {
             <div className='-mt-4 relative overflow-hidden'>
                 <Image
                     src={skeleton}
-                    alt='skeleton diagram highlighting major joints 312x819, 0.381x'
+                    alt='skeleton diagram highlighting major joints'
                     width={300}
                     style={{ height: "auto" }}
                     height={391}

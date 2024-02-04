@@ -12,7 +12,7 @@ export default function CMS() {
             <h2 className='mt-8 font-hind text-center text-gray-300/90 text-6xl text-balance'>
                 Doctors rarely stand still.
             </h2>
-            <h2 className='mt-2 font-hind text-center text-gray-300/90 text-6xl font-bold text-balance'>
+            <h2 className='mt-4 md:mt-2 font-hind text-center text-gray-300/90 text-6xl font-bold text-balance'>
                 Neither do we.
             </h2>
             <div className='mt-20 flex flex-col md:flex-row gap-12'>

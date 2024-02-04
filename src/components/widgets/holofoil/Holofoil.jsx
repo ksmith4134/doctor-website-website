@@ -13,7 +13,7 @@ export default function Holofoil(props) {
         perspective = 600,
         radius = 28,
         foregroundImage = foreground,
-        opacity = 0.6,
+        opacity = 0.3,
         rotateX = 12,
         rotateY = 12,
         shimmerRate = 30,

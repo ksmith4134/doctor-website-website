@@ -110,12 +110,12 @@ export default function Services() {
                 </h5>
             </div> */}
 
-            {/* <h2 className='block md:hidden mb-6 font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>Our Services</h2>
+            <h2 className='block md:hidden mb-6 font-hind font-normal text-6xl leading-tight text-gray-300 text-center'>Our Services</h2>
 
-            <div className='hidden py-5 md:flex justify-between items-center gap-8 text-gray-300 font-medium text-md uppercase border-b border-gray-600/60'>
+            <div className='hidden py-5 md:flex justify-between items-center gap-8 text-gray-300/90 font-semibold text-md uppercase border-b border-gray-600/40'>
                 <h3 className='basis-1/2'>Our Services</h3>
                 <h3 className='basis-1/2'>How we work</h3>
-            </div> */}
+            </div>
             {list.services.map((service) => (
                 <FlexRow
                     key={service.id}
@@ -123,7 +123,7 @@ export default function Services() {
                     bullets={service.bullets}
                 />
             ))}
-            <button onClick={expandList} className="mt-8 text-portfolio-primary flex items-center gap-2">
+            <button onClick={expandList} className="mt-8 text-main-primary drop-shadow-[0_2px_12px_rgba(110,142,157,.9)] flex items-center gap-2">
                 View more
                 {list.full ? <FiMinus /> : <FiPlus />}
             </button>

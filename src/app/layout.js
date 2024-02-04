@@ -15,7 +15,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang='en' className="scroll-smooth">
-            <body className={`bg-gray-950 ${inter.className} ${hind_siliguri.variable}`}>
+            <body className={`bg-gray-950 ${inter.className} ${hind_siliguri.variable} relative`}>
+                <div className="absolute top-0 left-0 w-full h-96 bg-custom-gradient-2"></div>
                 <Header />
                     {children}
                 <Footer />

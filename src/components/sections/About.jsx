@@ -33,7 +33,7 @@ export default function About() {
                                 alt='about us profile picture'
                                 src={davidProfilePic}
                                 fill={true}
-                                className='object-cover grayscale-0 group-hover:grayscale-0 transition duration-300 ease-in-out'
+                                className='object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-300 ease-in-out'
                             />
                         </div>
                         {/* TEXT */}
@@ -57,7 +57,7 @@ export default function About() {
                                 alt='about us profile picture'
                                 src={kevinProfilePic}
                                 fill={true}
-                                className='object-cover grayscale-0 group-hover:grayscale-0 transition duration-300 ease-in-out'
+                                className='object-cover grayscale-[20%] group-hover:grayscale-0 transition duration-300 ease-in-out'
                             />
                         </div>
                         {/* TEXT */}

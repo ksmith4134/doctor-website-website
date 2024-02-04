@@ -1,6 +1,7 @@
 import GalleryCard from "../widgets/GalleryCard";
 import { FaArrowRight } from "react-icons/fa6";
 import Image from "next/image";
+import skeletonMobile from "../../../public/portfolio/arnot/Skeleton_Lg_800x920.png"
 
 const circles = [
     { id: 0, label: "elbow", position: "bottom-[13%] left-[3%]" },
@@ -38,7 +39,7 @@ export default function Portfolio() {
             <div className='md:hidden mt-16 relative overflow-hidden mx-auto flex justify-center'>
                 <div className="w-fit relative">
                     <Image
-                        src={"/portfolio/arnot/Skeleton_Lg_800x920.png"}
+                        src={skeletonMobile}
                         alt='skeleton diagram highlighting major joints'
                         width={360}
                         height={920}

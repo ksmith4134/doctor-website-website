@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Navigation from "../portfolio/Navigation";
 import Condition from "../portfolio/Condition";
 import Profile from "../portfolio/Profile";
+import { FaArrowRight } from "react-icons/fa6";
 
 const portfolio = [
     {
@@ -53,16 +54,16 @@ export default function GalleryCard() {
 
 
     return (
-        <div className='mt-16 flex flex-col lg:flex-row items-start gap-8'>
-            <div className='basis-3/12 mt-2 flex flex-row lg:flex-col gap-12'>
+        <div className='mt-16 flex flex-col lg:flex-row items-center gap-8'>
+            <div className='basis-3/12 mt-2 flex flex-row lg:flex-col justify-between gap-12'>
                 {portfolio.map((item) => (
                     <div
                         key={item.id}
                         onClick={() => handleSelected(item.id)}
-                        className='relative z-0 text-gray-300/90 pl-4 py-4 border-l hover:cursor-pointer group border-gray-600/40'
+                        className='relative z-0 text-gray-300/90 pl-4 py-3 border-l hover:cursor-pointer group border-gray-600/40'
                     >
                         <h5
-                            className={`font-semibold text-md ${
+                            className={`font-semibold ${
                                 selected === item.id
                                     ? "text-portfolio-primary"
                                     : "group-hover:text-portfolio-primary"
