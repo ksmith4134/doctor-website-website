@@ -47,7 +47,7 @@ export default function ContactForm() {
                 autoComplete='off'
                 required
                 disabled={disableForm}
-                className='w-full mt-1 p-2 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-500/40 focus:outline-none focus:border-gray-400'
+                className='w-full mt-1 p-3 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-600/40 focus:outline-none focus:border-gray-600'
             ></input>
             <br />
             <br />
@@ -68,7 +68,7 @@ export default function ContactForm() {
                 autoComplete='off'
                 required
                 disabled={disableForm}
-                className='w-full mt-1 p-2 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-500/40 focus:outline-none focus:border-gray-400'
+                className='w-full mt-1 p-3 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-600/40 focus:outline-none focus:border-gray-600'
             ></input>
             <br />
 

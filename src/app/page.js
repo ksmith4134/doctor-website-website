@@ -10,32 +10,32 @@ import MaxWidth from "@/components/utils/MaxWidth";
 export default function Home() {
     return (
         <main>
-            <div id="hero" className="">
+            <div id="hero" className="pb-24">
                 <MaxWidth>
                     <Hero />
                 </MaxWidth>
             </div>
-            <div id="services" className="pt-40">
+            <div id="services" className="py-24">
                 <MaxWidth>
                     <Services />
                 </MaxWidth>
             </div>
-            <div id="work" className="pt-48">
+            <div id="work" className="py-24">
                 <MaxWidth>
                     <Portfolio />
                 </MaxWidth>
             </div>
-            <div id="innovation" className="pt-48">
+            <div id="innovation" className="py-24">
                 <MaxWidth>
                     <CMS />
                 </MaxWidth>
             </div>
-            <div id="about" className="pt-48">
+            <div id="about" className="py-24">
                 <MaxWidth>
                     <About />
                 </MaxWidth>
             </div>
-            <div id="contact" className="pt-48">
+            <div id="contact" className="py-24">
                 <MaxWidth>
                     <Contact />
                 </MaxWidth>

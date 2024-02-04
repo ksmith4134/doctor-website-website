@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <MaxWidth>
-            <footer className="mt-24 w-full py-20">
+            <footer className="w-full py-20">
                 <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                 <div className="pt-16 text-white text-sm flex flex-col justify-center items-start">
                     <p className="font-bold uppercase">Revered</p>
