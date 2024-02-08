@@ -20,7 +20,6 @@ export default function Portfolio() {
                 <h5 className='mt-4 text-lg text-gray-300/90 leading-relaxed text-balance'>
                     Arnot Health&apos;s orthopedics department reached out to us to build a patient resource web app. Check out some highlights below or click to learn more.
                 </h5>
-                
             </div>
             
             <div className="hidden md:block lg:mt-24">

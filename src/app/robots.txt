@@ -2,6 +2,8 @@ User-Agent: *
 Allow: /
 Disallow: /private/
 Disallow: /legal/
+Disallow: /sandbox/
+Disallow: /old/
 
 Sitemap: https://reveredcampaigns.com/sitemap.xml
 Sitemap: https://www.reveredcampaigns.com/sitemap.xml

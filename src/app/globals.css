@@ -36,5 +36,9 @@
 
 .bg-custom-gradient-2 {
     background-image: 
-        radial-gradient(60% 200% at 0% 0%, rgba(166, 213, 234, 0.07) 0%, rgba(166, 213, 234, 0) 40%);
+        radial-gradient(100% 200% at 50% 0%, rgba(166, 213, 234, 0.1) 0%, rgba(166, 213, 234, 0) 40%);
+}
+
+pre {
+    background-color: transparent !important;
 }

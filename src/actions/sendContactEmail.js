@@ -3,7 +3,6 @@
 import nodemailer from "nodemailer";
 
 export async function sendContactEmail(prevState, formData) {
-
     let state = {
         message: {
             body: "",
@@ -15,8 +14,9 @@ export async function sendContactEmail(prevState, formData) {
 
     const disableThreshold = 2;
 
-    if(prevState.count >= disableThreshold){
-        state.message.body = "Form is temporarily deactivated. Try again later.";
+    if (prevState.count >= disableThreshold) {
+        state.message.body =
+            "Form is temporarily deactivated. Try again later.";
         state.message.type = "warn";
         state.count = prevState.count + 1;
         state.disable = true;
@@ -24,7 +24,7 @@ export async function sendContactEmail(prevState, formData) {
     }
 
     const data = {
-        name: formData.get("name"),
+        // name: formData.get("name"),
         email: formData.get("email"),
     };
 
@@ -40,10 +40,10 @@ export async function sendContactEmail(prevState, formData) {
         from: process.env.EMAIL_ADDRESS,
         to: process.env.EMAIL_ADDRESS,
         subject: `New Contact Request from Doctor Website`,
-        html: `${data.name}<br>${data.email}`,
+        html: `${data.email}`,
     };
 
-    const sendMail = () => 
+    const sendMail = () =>
         new Promise((resolve, reject) => {
             transporter.sendMail(options, function (err) {
                 if (!err) {
@@ -53,7 +53,7 @@ export async function sendContactEmail(prevState, formData) {
                 }
             });
         });
-    
+
     try {
         const response = await sendMail();
         state.message.body = `${response}`;
@@ -66,5 +66,4 @@ export async function sendContactEmail(prevState, formData) {
         state.count = prevState.count + 1;
         return state;
     }
-    
 }

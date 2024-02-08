@@ -4,6 +4,7 @@ import { useFormState } from "react-dom";
 import { useEffect, useState } from "react";
 import { sendContactEmail } from "@/actions/sendContactEmail";
 import { SubmitButton } from "./SubmitButton";
+import ToastMessage from "./ToastMessage";
 
 const initialState = {
     message: {
@@ -15,64 +16,45 @@ const initialState = {
 };
 
 export default function ContactForm() {
-
     const [state, formAction] = useFormState(sendContactEmail, initialState);
-    const [inputs, setInputs] = useState({ name: "", email: "" });
+    const [inputs, setInputs] = useState({ email: "" });
     const [disableForm, setDisableForm] = useState(false);
 
     useEffect(() => {
         setInputs({ name: "", email: "" });
-        if(state.disable){
-            setDisableForm(true)
+        if (state.disable) {
+            setDisableForm(true);
         }
     }, [state]);
 
     return (
-        <form action={formAction} id='contact' className='mt-12 text-gray-300/90'>
-            <label htmlFor='name' className='text-xs ml-1'>
-                Name
-            </label>
-            <br />
-            <input
-                type='text'
-                id='name'
-                name='name'
-                onChange={(e) =>
-                    setInputs({ email: inputs.email, name: e.target.value })
-                }
-                value={inputs.name}
-                minLength='3'
-                maxLength='25'
-                placeholder={disableForm ? 'Disabled' : 'Enter your name'}
-                autoComplete='off'
-                required
-                disabled={disableForm}
-                className='w-full mt-1 p-3 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-600/40 focus:outline-none focus:border-gray-600'
-            ></input>
-            <br />
-            <br />
-
-            <label htmlFor='email' className='text-xs ml-1'>
-                Email
-            </label>
-            <br />
-            <input
-                type='email'
-                id='email'
-                name='email'
-                onChange={(e) =>
-                    setInputs({ email: e.target.value, name: inputs.name })
-                }
-                value={inputs.email}
-                placeholder={disableForm ? 'Disabled' : 'Enter your email'}
-                autoComplete='off'
-                required
-                disabled={disableForm}
-                className='w-full mt-1 p-3 h-12 bg-transparent text-sm placeholder:font-light placeholder-gray-500 border rounded-md border-gray-600/40 focus:outline-none focus:border-gray-600'
-            ></input>
-            <br />
-
-            <SubmitButton message={state.message} disableForm={disableForm} />
-        </form>
+        <>
+            <form
+                action={formAction}
+                id='contact-form'
+                className='mt-4 flex gap-4 w-[400px] h-12'
+            >
+                <div className='p-1 bg-white/5 w-full h-full border border-gray-600/20 rounded-full flex justify-between items-center gap-2'>
+                    <input
+                        type='email'
+                        id='email'
+                        name='email'
+                        onChange={(e) => setInputs({ email: e.target.value })}
+                        value={inputs.email}
+                        placeholder={
+                            disableForm
+                                ? "Disabled"
+                                : "Enter email and click contact"
+                        }
+                        autoComplete='off'
+                        required
+                        disabled={disableForm}
+                        className='w-full h-full px-4 bg-transparent text-sm text-gray-300/90 placeholder-gray-600 focus:outline-none focus:border-gray-600'
+                    ></input>
+                    <SubmitButton disableForm={disableForm} />
+                </div>
+            </form>
+            <ToastMessage message={state.message} />
+        </>
     );
 }
