@@ -3,22 +3,16 @@ import ProfileCard from "@/components/widgets/ProfileCard";
 import ContactForm from "../components/forms/ContactForm";
 import { codeToHtml } from "shiki";
 import Image from "next/image";
-import { profiles, code, doctorTypes, conditionsGraphic } from "../lib/cms";
+import { profiles, code, doctorTypes, conditionsGraphic, portfolio } from "../lib/cms";
 
-import {
-    FiPenTool,
-    FiCode,
-    FiCamera,
-    FiUser,
-    FiFolder,
-    FiPlay,
-    FiMenu,
-} from "react-icons/fi";
+import { FiPenTool, FiCode, FiCamera, FiUser, FiFolder, FiPlay, FiMenu } from "react-icons/fi";
 import { FaCircleInfo, FaArrowRight } from "react-icons/fa6";
 import { IoAccessibilityOutline, IoSearchOutline } from "react-icons/io5";
 import { BsFileEarmarkPdf, BsArrowDownSquareFill } from "react-icons/bs";
 import { MdAddCircleOutline } from "react-icons/md";
 import { RiOpenaiFill } from "react-icons/ri";
+import Gallery from "@/components/widgets/Gallery";
+import Holofoil from "@/components/widgets/holofoil/Holofoil";
 
 const html = await codeToHtml(code, {
     lang: "javascript",
@@ -171,34 +165,33 @@ export default function Home() {
                         <div className='w-full relative'>
                             <div className='flex justify-start h-[480px]'>
                                 <div className='w-96 h-72 rounded-xl bg-gradient-radial from-main-secondary/30 to-main-secondary/5 border border-white/5 overflow-hidden relative'>
-                                    <Image alt="doctors in a hospital with patients" src={'/portfolio/arnot/hospital-tour-2.jpg'} fill={true} className="object-cover opacity-30" />
-                                    {/* <div className='px-8 py-4 w-full h-full bg-noise bg-repeat'>
+                                    <div className='p-8 w-full h-full bg-noise bg-repeat'>
                                         <div className="flex justify-between items-center">
-                                            <h3 className="text-md font-semibold text-gray-300/40">Conditions</h3>
+                                            <h3 className="text-md font-semibold text-gray-300/30">Conditions</h3>
                                             <div className="w-48 h-8 rounded-md p-2 bg-white/5 flex justify-start items-center gap-3">
                                                 <IoSearchOutline className="w-4 h-4 text-gray-300/20" />
                                                 <p className="text-xs text-gray-300/20">Search</p>
                                             </div>
                                         </div>
-                                        <div className="mt-6 grid grid-cols-3 gap-4">
-                                            <div className="p-3 flex flex-col justify-center items-center gap-4 rounded-lg border border-white/5 bg-white/[0.02] h-24">
-                                                <MdAddCircleOutline className="shrink-0 mt-2 w-8 h-8 text-gray-300/20" />
-                                                <p className="text-xs font-semibold text-gray-300/20">Add</p>
+                                        <div className="mt-6 grid grid-cols-3 gap-4 text-gray-300/20">
+                                            <div className="p-3 flex flex-col justify-center items-center gap-2 rounded-lg border border-white/5 bg-white/[0.02] h-20">
+                                                <MdAddCircleOutline className="w-8 h-8" />
+                                                <p className="text-xs font-semibold">Add</p>
                                             </div>
-                                            { conditionsGraphic.map((item) => (
-                                                <div key={item.id} className="p-3 flex flex-col justify-between items-start rounded-lg border border-white/5 bg-white/[0.02] h-24">
-                                                    <p className="text-xs font-semibold text-gray-300/20">{item.label}</p>
+                                            { conditionsGraphic.map((item, index) => (
+                                                <div key={item.id} className={`${index > 2 ? 'flex md:hidden': 'flex'} p-3 flex-col justify-between items-start rounded-lg border border-white/5 bg-white/[0.02] h-20`}>
+                                                    <p className="text-xs font-semibold">{item.label}</p>
                                                     <div className="w-full flex justify-between items-center">
-                                                        <p className="text-xs text-gray-300/20">View</p>
-                                                        <FaArrowRight className="text-xs text-gray-300/20" />
+                                                        <p className="text-xs">View</p>
+                                                        <FaArrowRight className="text-xs" />
                                                     </div>    
                                                 </div>
                                             ))}
                                         </div>
-                                    </div> */}
+                                    </div>
                                 </div>
                             </div>
-                            <div className='absolute bottom-[0%] right-10 w-96'>
+                            <div className='absolute bottom-[1.5%] right-12 w-96'>
                                 <div className='w-full h-14 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
                                     <div className='p-4 w-full h-full bg-noise bg-repeat flex justify-between items-center gap-4'>
                                         <p className="text-xs text-gray-300/60 italic">Write a conservative care plan for hyperthyroidism</p>
@@ -221,7 +214,7 @@ export default function Home() {
                                     <FiPlay className='ml-2 w-10 h-10 text-gray-300/80' />
                                 </div>
                             </div>
-                            <div className='absolute z-10 bottom-14 left-[19%] flex justify-center items-center'>
+                            <div className='absolute z-10 bottom-14 left-[18%] flex justify-center items-center'>
                                 <div className='rounded-xl border border-white/5 shadow-inner shadow-white/5 backdrop-blur-lg bg-white/5 flex justify-center items-center w-20 h-20'>
                                     <BsFileEarmarkPdf className='w-10 h-10 text-gray-300/80' />
                                 </div>
@@ -240,7 +233,7 @@ export default function Home() {
                                     <p className='mt-2 font-light'>
                                         We work with photographers and
                                         videographers to help deliver
-                                        profressional content
+                                        professional content.
                                     </p>
                                 </div>
                             </div>
@@ -251,8 +244,8 @@ export default function Home() {
                                         Patient education resources
                                     </h3>
                                     <p className='mt-2 font-light'>
-                                        Document creation for protocols,
-                                        treatments, & more.
+                                        Create documentation for conditions,
+                                        treatments, protocols, and more.
                                     </p>
                                 </div>
                             </div>
@@ -288,20 +281,7 @@ export default function Home() {
                                 click to learn more.
                             </h5>
                         </div>
-                        <div className='mt-12 w-96 h-12 rounded-full backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 shadow-inner shadow-white/5 overflow-hidden'>
-                            <div className='px-8 py-1 w-full h-full rounded-2xl bg-noise bg-repeat flex justify-between items-center gap-8 text-sm text-gray-300/90'>
-                                <p>Navigation</p>
-                                <p className='w-full h-full rounded-full backdrop-blur-lg flex justify-center items-center bg-gradient-radial from-white/10'>
-                                    Education
-                                </p>
-                                <p>Profiles</p>
-                            </div>
-                        </div>
-                        <div className='mt-8 max-w-4xl w-full aspect-video rounded-xl backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden'>
-                            <div className='p-8 w-full h-full rounded-2xl bg-noise bg-repeat'>
-                                <code className='text-gray-300/60'></code>
-                            </div>
-                        </div>
+                        <Gallery />
                     </div>
                     <div className='pb-24 flex justify-center items-center gap-16'>
                         <div className='flex flex-col justify-center items-center gap-8'>
@@ -315,7 +295,7 @@ export default function Home() {
                             </p>
                             <div className='flex items-center gap-4'>
                                 <div className='h-px w-6 bg-portfolio-primary'></div>
-                                <p className='text-portfolio-primary text-lg italic'>
+                                <p className='text-cyan-700 text-lg italic'>
                                     Arnot Health Orthopedics
                                 </p>
                             </div>
@@ -362,7 +342,7 @@ export default function Home() {
             <div id='contact'>
                 <MaxWidth>
                     <div className='py-24 flex flex-col justify-center items-center'>
-                        <h1 className='mt-4 font-hind text-6xl leading-tight text-gray-300/90'>
+                        <h1 className='font-hind text-6xl leading-tight text-gray-300/90'>
                             Contact us
                         </h1>
                         <ContactForm />
