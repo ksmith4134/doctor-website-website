@@ -1,4 +1,10 @@
 import MaxWidth from "@/components/utils/MaxWidth";
+import ProfileCard from "@/components/widgets/ProfileCard";
+import ContactForm from "../components/forms/ContactForm";
+import { codeToHtml } from "shiki";
+import Image from "next/image";
+import { profiles, code, doctorTypes, conditionsGraphic } from "../lib/cms";
+
 import {
     FiPenTool,
     FiCode,
@@ -8,55 +14,11 @@ import {
     FiPlay,
     FiMenu,
 } from "react-icons/fi";
-import { FaCircleInfo } from "react-icons/fa6";
-import { IoAccessibilityOutline } from "react-icons/io5";
-import { BsFileEarmarkPdf } from "react-icons/bs";
-import ProfileCard from "@/components/widgets/ProfileCard";
-import davidProfilePic from "../../public/david.jpg";
-import kevinProfilePic from "../../public/kevin.jpg";
-import ContactForm from "../components/forms/ContactForm";
-import { codeToHtml } from "shiki";
-import Image from "next/image";
-
-const profiles = [
-    {
-        id: 0,
-        profilePic: davidProfilePic,
-        name: "David Smith",
-        title: "Founder, Design Engineer",
-        picAltText: "profile picture of company founder, David Smith",
-        gradientColor: "teal",
-    },
-    {
-        id: 1,
-        profilePic: kevinProfilePic,
-        name: "Kevin Smith",
-        title: "Founder, Software Engineer",
-        picAltText: "profile picture of company founder, Kevin Smith",
-        gradientColor: "red",
-    },
-    {
-        id: 2,
-        profilePic: null,
-        name: "Dr. Doogie Howser",
-        title: "Medical Advisor, Prodigy",
-        picAltText: "profile picture of company medical advisor, Doogie Howser",
-        gradientColor: "amber",
-    },
-];
-
-const code = `try {
-    const data = await sendMail();
-    const response = data.json();
-    if(response.ok){
-        setSuccess({message: 'Welcome!'})
-    } else {
-        throw new Error();
-    }
-} catch (err) {
-    console.log('Please try again.');
-}
-`;
+import { FaCircleInfo, FaArrowRight } from "react-icons/fa6";
+import { IoAccessibilityOutline, IoSearchOutline } from "react-icons/io5";
+import { BsFileEarmarkPdf, BsArrowDownSquareFill } from "react-icons/bs";
+import { MdAddCircleOutline } from "react-icons/md";
+import { RiOpenaiFill } from "react-icons/ri";
 
 const html = await codeToHtml(code, {
     lang: "javascript",
@@ -68,7 +30,7 @@ export default function Home() {
         <main>
             <div id='hero'>
                 <MaxWidth>
-                    <div className='relative -mt-10 -mb-24 min-h-screen flex flex-col justify-center items-center gap-6'>
+                    <div className='relative py-24 lg:pt-48 lg:pb-16 -mt-10 flex flex-col justify-center items-center gap-6'>
                         <h1 className='font-hind text-6xl leading-tight text-gray-300/90 text-balance text-center'>
                             Building better websites for{" "}
                             <span className='font-semibold'>
@@ -81,6 +43,26 @@ export default function Home() {
                         <ContactForm />
                     </div>
                 </MaxWidth>
+            </div>
+            <div id='horizontal-infinite-scroll' className="relative mb-16 h-48 bg-gradient-radial from-white/5 to-[30%] whitespace-nowrap overflow-hidden flex items-center"> 
+                <ul className="slide-animate inline-flex items-center">
+                    { doctorTypes.map((item) => (
+                        <li key={item.id} className="mx-16 text-gray-500 text-center flex gap-2 items-center">
+                            <div className="text-main-primary">{item.icon()}</div>
+                            <p>{item.label}</p>
+                        </li>
+                    ))}
+                </ul>
+                <ul className="slide-animate inline-flex items-center">
+                    { doctorTypes.map((item) => (
+                        <li key={item.id} className="mx-16 text-gray-500 text-center flex gap-2 items-center">
+                            <div className="text-main-primary">{item.icon()}</div>
+                            <p>{item.label}</p>
+                        </li>
+                    ))}
+                </ul>
+                <div className="absolute z-10 w-full h-full bg-gradient-to-r from-gray-950 from-[10%] to-transparent to-[40%]"></div>    
+                <div className="absolute z-10 w-full h-full bg-gradient-to-l from-gray-950 from-[10%] to-transparent to-[40%]"></div> 
             </div>
             <div id='services'>
                 <MaxWidth>
@@ -135,7 +117,7 @@ export default function Home() {
                                         <div className='w-full px-4 py-3 rounded-lg bg-main-secondary/10 flex justify-between items-center text-gray-300/90'>
                                             <div>
                                                 <p className='text-xs'>
-                                                    ACL Tear
+                                                    Rotator Cuff Tear
                                                 </p>
                                                 <p className='text-sm font-medium'>
                                                     Background
@@ -145,11 +127,7 @@ export default function Home() {
                                         </div>
                                         <div className='w-full px-4 py-3 rounded-lg bg-main-secondary/20 text-2xl font-hind'>
                                             <p className='text-xs text-gray-300/90'>
-                                                An ACL injury is a tear or
-                                                sprain of the anterior cruciate
-                                                ligament. It is a common sports
-                                                injury that occurs when the knee
-                                                is twisted or impacted.
+                                                Injuries to the rotator cuff can be caused by overuse, traumatic events such as falls or sports injuries, or degenerative changes associated with aging.
                                             </p>
                                         </div>
                                         <div className='w-full aspect-video px-4 py-3 rounded-lg relative overflow-hidden'>
@@ -192,13 +170,50 @@ export default function Home() {
                     <div className='py-24 flex justify-between items-center gap-16'>
                         <div className='w-full relative'>
                             <div className='flex justify-start h-[480px]'>
-                                <div className='w-96 h-72 rounded-xl bg-gradient-radial from-main-secondary/30 to-main-secondary/5 border border-white/5 overflow-hidden'>
-                                    <div className='p-8 w-full h-full bg-noise bg-repeat'></div>
+                                <div className='w-96 h-72 rounded-xl bg-gradient-radial from-main-secondary/30 to-main-secondary/5 border border-white/5 overflow-hidden relative'>
+                                    <Image alt="doctors in a hospital with patients" src={'/portfolio/arnot/hospital-tour-2.jpg'} fill={true} className="object-cover opacity-30" />
+                                    {/* <div className='px-8 py-4 w-full h-full bg-noise bg-repeat'>
+                                        <div className="flex justify-between items-center">
+                                            <h3 className="text-md font-semibold text-gray-300/40">Conditions</h3>
+                                            <div className="w-48 h-8 rounded-md p-2 bg-white/5 flex justify-start items-center gap-3">
+                                                <IoSearchOutline className="w-4 h-4 text-gray-300/20" />
+                                                <p className="text-xs text-gray-300/20">Search</p>
+                                            </div>
+                                        </div>
+                                        <div className="mt-6 grid grid-cols-3 gap-4">
+                                            <div className="p-3 flex flex-col justify-center items-center gap-4 rounded-lg border border-white/5 bg-white/[0.02] h-24">
+                                                <MdAddCircleOutline className="shrink-0 mt-2 w-8 h-8 text-gray-300/20" />
+                                                <p className="text-xs font-semibold text-gray-300/20">Add</p>
+                                            </div>
+                                            { conditionsGraphic.map((item) => (
+                                                <div key={item.id} className="p-3 flex flex-col justify-between items-start rounded-lg border border-white/5 bg-white/[0.02] h-24">
+                                                    <p className="text-xs font-semibold text-gray-300/20">{item.label}</p>
+                                                    <div className="w-full flex justify-between items-center">
+                                                        <p className="text-xs text-gray-300/20">View</p>
+                                                        <FaArrowRight className="text-xs text-gray-300/20" />
+                                                    </div>    
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div> */}
                                 </div>
                             </div>
-                            <div className='absolute bottom-[0%] right-10 w-96 h-72'>
-                                <div className='w-full h-full rounded-xl backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
-                                    <div className='p-8 w-full h-full bg-noise bg-repeat'></div>
+                            <div className='absolute bottom-[0%] right-10 w-96'>
+                                <div className='w-full h-14 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
+                                    <div className='p-4 w-full h-full bg-noise bg-repeat flex justify-between items-center gap-4'>
+                                        <p className="text-xs text-gray-300/60 italic">Write a conservative care plan for hyperthyroidism</p>
+                                        <BsArrowDownSquareFill className="-mr-1 w-8 h-8 text-gray-300/20" />
+                                    </div>
+                                </div>
+                                <div className='mt-2 w-full h-56 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
+                                    <div className='p-4 w-full h-full bg-noise bg-repeat flex items-start gap-4'>
+                                        <RiOpenaiFill className="w-8 h-8 text-gray-300/60 shrink-0" />
+                                        <div>
+                                            <h3 className="mt-1 text-md font-semibold text-gray-300/60">ChatGPT</h3>
+                                            <p className="mt-4 text-xs text-gray-300/60 leading-normal">Conservative management for hyperthyroidism typically involves medication, lifestyle adjustments, and regular monitoring. However, please note that treatment plans should be personalized and supervised by a healthcare professional. Here&apos;s a general conservative care plan:</p>
+                                            <p className="mt-4 text-xs text-gray-300/60 font-semibold leading-normal">1. Medication:</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className='absolute z-10 top-14 right-[26%] flex justify-center items-center'>

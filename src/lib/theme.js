@@ -3,6 +3,12 @@ import { IoAccessibilityOutline, IoDocumentOutline } from "react-icons/io5";
 import { GoCommentDiscussion } from "react-icons/go";
 import { BsUnlock } from "react-icons/bs";
 
+import { FaUserMd, FaDiagnoses } from "react-icons/fa";
+import { FaBrain, FaBone, FaHeart, FaBaby, FaHospital, FaBolt, FaBowlFood, FaPersonWalking, FaRibbon, FaTooth } from "react-icons/fa6";
+import { MdOutlineFamilyRestroom } from "react-icons/md";
+import { GiStomach } from "react-icons/gi";
+
+
 export const ICONS = {
     'compass': FiNavigation,
     'plus': FiPlus,
@@ -20,7 +26,22 @@ export const ICONS = {
     'discuss': GoCommentDiscussion,
     'unlock': BsUnlock,
     'document': IoDocumentOutline,
+    'family': MdOutlineFamilyRestroom,
+    'tooth': FaTooth,
+    'walking': FaPersonWalking,
+    'brain': FaBrain,
+    'skin': FaDiagnoses,
+    'doctor': FaUserMd,
+    'ribbon': FaRibbon,
+    'bone': FaBone,
+    'stomach': GiStomach,
+    'heart': FaHeart,
+    'baby': FaBaby,
+    'hospital': FaHospital,
+    'lightning': FaBolt,
+    'food': FaBowlFood,
 }
+
 
 export const FONT_COLORS = {
     "success": "text-emerald-300",
