@@ -22,9 +22,9 @@ const html = await codeToHtml(code, {
 export default function Home() {
     return (
         <main>
-            <div id='hero'>
+            <div id='hero' className="py-24 lg:pt-48 lg:pb-16">
                 <MaxWidth>
-                    <div className='relative py-24 lg:pt-48 lg:pb-16 -mt-10 flex flex-col justify-center items-center gap-6'>
+                    <div className='relative -mt-10 flex flex-col justify-center items-center gap-6'>
                         <h1 className='font-hind text-6xl leading-tight text-gray-300/90 text-balance text-center'>
                             Building better websites for{" "}
                             <span className='font-semibold'>
@@ -131,7 +131,7 @@ export default function Home() {
                                                     "/portfolio/arnot/x-ray-2.jpg"
                                                 }
                                                 fill={true}
-                                                className='object-cover'
+                                                className='object-cover opacity-80'
                                             />
                                         </div>
                                         <div className='w-full px-4 py-3 rounded-lg bg-white/10 flex items-center gap-4'>
@@ -164,7 +164,7 @@ export default function Home() {
                     <div className='py-24 flex justify-between items-center gap-16'>
                         <div className='w-full relative'>
                             <div className='flex justify-start h-[480px]'>
-                                <div className='w-96 h-72 rounded-xl bg-gradient-radial from-main-secondary/30 to-main-secondary/5 border border-white/5 overflow-hidden relative'>
+                                <div className='w-96 h-72 rounded-xl bg-gradient-radial from-cyan-200/20 to-cyan-800/5 border border-white/5 overflow-hidden relative'>
                                     <div className='p-8 w-full h-full bg-noise bg-repeat'>
                                         <div className="flex justify-between items-center">
                                             <h3 className="text-md font-semibold text-gray-300/30">Conditions</h3>
@@ -192,13 +192,13 @@ export default function Home() {
                                 </div>
                             </div>
                             <div className='absolute bottom-[1.5%] right-12 w-96'>
-                                <div className='w-full h-14 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
+                                <div className='w-full h-14 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/40'>
                                     <div className='p-4 w-full h-full bg-noise bg-repeat flex justify-between items-center gap-4'>
                                         <p className="text-xs text-gray-300/60 italic">Write a conservative care plan for hyperthyroidism</p>
                                         <BsArrowDownSquareFill className="-mr-1 w-8 h-8 text-gray-300/20" />
                                     </div>
                                 </div>
-                                <div className='mt-2 w-full h-56 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/20'>
+                                <div className='mt-2 w-full h-56 rounded-lg backdrop-blur-3xl bg-gradient-radial from-main-secondary/5 to-white/5 border border-white/5 overflow-hidden shadow-lg shadow-gray-950/40'>
                                     <div className='p-4 w-full h-full bg-noise bg-repeat flex items-start gap-4'>
                                         <RiOpenaiFill className="w-8 h-8 text-gray-300/60 shrink-0" />
                                         <div>
@@ -266,9 +266,9 @@ export default function Home() {
                     </div>
                 </MaxWidth>
             </div>
-            <div id='work'>
+            <div id='work' className="py-24">
                 <MaxWidth>
-                    <div className='py-24 flex flex-col items-center'>
+                    <div className='flex flex-col items-center'>
                         <div className='flex flex-col items-center text-center'>
                             <h3 className='text-gray-500 text-lg'>Our Work</h3>
                             <h1 className='mt-4 font-hind text-6xl leading-tight text-gray-300/90'>
@@ -281,9 +281,9 @@ export default function Home() {
                                 click to learn more.
                             </h5>
                         </div>
-                        <Gallery />
                     </div>
-                    <div className='pb-24 flex justify-center items-center gap-16'>
+                    <Gallery />
+                    <div className='pt-24 flex justify-center items-center gap-16'>
                         <div className='flex flex-col justify-center items-center gap-8'>
                             <p className='max-w-3xl text-xl text-center text-gray-300 leading-relaxed font-light text-balance'>
                                 &quot;Revered delivered a perfect website that
@@ -303,9 +303,9 @@ export default function Home() {
                     </div>
                 </MaxWidth>
             </div>
-            <div id='about'>
+            <div id='about' className="py-24">
                 <MaxWidth>
-                    <div className='py-24 flex flex-col justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center'>
                         <h3 className='text-gray-500 text-lg'>About Us</h3>
                         <h2 className='mt-4 font-hind text-center text-gray-300/90 text-6xl text-balance'>
                             Doctors rarely stand still.
@@ -339,9 +339,9 @@ export default function Home() {
                     </div>
                 </MaxWidth>
             </div>
-            <div id='contact'>
+            <div id='contact' className="py-24">
                 <MaxWidth>
-                    <div className='py-24 flex flex-col justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center'>
                         <h1 className='font-hind text-6xl leading-tight text-gray-300/90'>
                             Contact us
                         </h1>

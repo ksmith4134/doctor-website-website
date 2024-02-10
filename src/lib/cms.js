@@ -89,19 +89,22 @@ export const portfolio = [
     {
         id: 0,
         label: "Education",
-        description: "Customizable, wiki-style condition pages.",
+        description: "View fully-customizable, wiki-style condition pages",
+        url: 'https://www.arnotortho.com/knee/knee-arthritis?index=Background',
         component: () => <Condition />,
     },
     {
         id: 1,
         label: "Navigation",
-        description: "Find conditions using an interactive skeleton.",
+        description: "See how patients find condition information using an interactive skeleton",
+        url: 'https://www.arnotortho.com/#body-diagram',
         component: () => <Navigation />,
     },
     {
         id: 2,
         label: "Profiles",
-        description: "Beautiful, professional profile pages.",
+        description: "Check out beautiful and professional doctor profile pages",
+        url: 'https://www.arnotortho.com/team/bryan-jarvis',
         component: () => <Profile />,
     },
 ];

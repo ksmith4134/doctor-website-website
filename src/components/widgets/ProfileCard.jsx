@@ -25,7 +25,7 @@ export default function ProfileCard(props) {
                             alt={picAltText}
                             src={profilePic}
                             fill={true}
-                            className='object-cover grayscale-[0%] group-hover:grayscale-0 transition duration-300 ease-in-out rounded-2xl'
+                            className='object-cover opacity-80 group-hover:opacity-100 grayscale-[20%] group-hover:grayscale-0 transition duration-500 ease-in-out rounded-2xl'
                         /> : 
                         <div className="bg-gray-600/40 h-full w-full rounded-2xl backdrop-blur-2xl"></div>
                     }
