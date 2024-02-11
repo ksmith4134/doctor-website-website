@@ -1,6 +1,6 @@
 import Image from "next/image";
+import { FiPlus } from "react-icons/fi";
 import { FaCircleInfo } from "react-icons/fa6";
-import { ICONS } from "@/lib/theme";
 import skeleton from "../../../public/portfolio/arnot/skeleton.png"
 
 const dropdown = [
@@ -17,7 +17,6 @@ const circles = [
 ];
 
 export default function Navigation() {
-    const Plus = ICONS["plus"];
 
     return (
         <div className='w-full h-full flex justify-between items-start'>
@@ -52,7 +51,7 @@ export default function Navigation() {
                         >
                             <div className='py-2 flex justify-between items-center hover:cursor-pointer text-gray-300/90'>
                                 <p>{item.label}</p>
-                                <Plus className='text-lg' />
+                                <FiPlus className='text-lg' />
                             </div>
                         </div>
                     ))}

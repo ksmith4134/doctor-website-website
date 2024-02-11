@@ -122,3 +122,81 @@ const innovation = [
         body: "Create reusable patient resources in a fraction of the time using our ChatGPT-powered, AI assistant. Write new content for treatment pages, PDFs, and more.",
     },
 ];
+
+const services = [
+    {
+        id: 0,
+        title: "Design",
+        bullets: [
+            {
+                id: 0,
+                body: "Modern tools help create beautifully crafted designs.",
+                icon: "pen",
+            },
+            {
+                id: 1,
+                body: "Leave feedback and comments on new designs in real-time.",
+                icon: "discuss",
+            },
+        ],
+    },
+    {
+        id: 1,
+        title: "Development",
+        bullets: [
+            {
+                id: 0,
+                body: "Each site is coded using popular programming languages & tools.",
+                icon: "code",
+            },
+            {
+                id: 1,
+                body: "No vendor lock-in. You own everything.",
+                icon: "unlock",
+            },
+            {
+                id: 2,
+                body: "Accessibility to meet the needs of every demographic.",
+                icon: "access",
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: "Content Creation",
+        bullets: [
+            {
+                id: 0,
+                body: "Storyboard, capture, and edit photography and video.",
+                icon: "image",
+            },
+            {
+                id: 1,
+                body: "Document creation for protocols, treatments, & more.",
+                icon: "document",
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: "Content Management",
+        bullets: [
+            {
+                id: 0,
+                body: "Easily add new resources and information to your site.",
+                icon: "folder",
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: "Patient Discovery",
+        bullets: [
+            {
+                id: 0,
+                body: "Amplify new patient discovery using search engine optimization.",
+                icon: "search",
+            },
+        ],
+    },
+];

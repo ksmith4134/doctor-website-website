@@ -36,23 +36,16 @@ pre {
 }
 
 
-
-/* Delete this once the new design is done */
-/* Internet Explorer 10+ */
-/* Firefox */
-/* .hide-scrollbar {
-    -ms-overflow-style: none;  
-    scrollbar-width: none;  
-} */
-
-/* Safari and Chrome */
-/* .hide-scrollbar::-webkit-scrollbar { 
-    display: none;  
-} */
+.hide-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
 
 
-/* Delete this once the new design is done */
-/* @keyframes growHeight {
+@keyframes growHeight {
     from {
         max-height: 0%;
     }
@@ -64,4 +57,4 @@ pre {
     animation-name: growHeight;
     animation-duration: 10s;
     animation-timing-function: linear;
-} */
+}

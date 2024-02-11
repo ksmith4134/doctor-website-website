@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Navigation from "../portfolio/Navigation";
 import Condition from "../portfolio/Condition";
 import Profile from "../portfolio/Profile";
-import { FaArrowRight } from "react-icons/fa6";
 
 const portfolio = [
     {
