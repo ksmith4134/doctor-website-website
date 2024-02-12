@@ -8,7 +8,7 @@ import MaxWidth from "@/components/utils/MaxWidth";
 
 export default function Home() {
     return (
-        <main className="slide-enter-content">
+        <main>
             <div id='hero' className='pt-24 md:pt-36 lg:pt-48 pb-16'>
                 <MaxWidth>
                     <Hero />
