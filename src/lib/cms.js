@@ -1,8 +1,12 @@
 import davidProfilePic from "../../public/david.jpg";
 import kevinProfilePic from "../../public/kevin.jpg";
+
 import Navigation from "../components/portfolio/Navigation";
+import NavigationMobile from "@/components/portfolio/NavigationMobile";
 import Condition from "../components/portfolio/Condition";
+import ConditionMobile from "@/components/portfolio/ConditionMobile";
 import Profile from "../components/portfolio/Profile";
+import ProfileMobile from "@/components/portfolio/ProfileMobile";
 
 import {
     FaBrain,
@@ -17,19 +21,11 @@ import {
     FaTooth,
     FaUserDoctor,
 } from "react-icons/fa6";
+import { BsBandaidFill } from "react-icons/bs";
+import { FiPenTool, FiCode, FiCamera, FiUser, FiFolder } from "react-icons/fi";
+import { IoAccessibilityOutline } from "react-icons/io5";
 import { IoIosPerson } from "react-icons/io";
 import { GiStomach } from "react-icons/gi";
-import { BsBandaidFill } from "react-icons/bs";
-
-import { FiPenTool, FiCode, FiCamera, FiUser, FiFolder, FiPlay, FiMenu } from "react-icons/fi";
-import { FaCircleInfo, FaArrowRight } from "react-icons/fa6";
-import { IoAccessibilityOutline, IoSearchOutline } from "react-icons/io5";
-import { BsFileEarmarkPdf, BsArrowDownSquareFill } from "react-icons/bs";
-import { MdAddCircleOutline } from "react-icons/md";
-import { RiOpenaiFill } from "react-icons/ri";
-import ConditionMobile from "@/components/portfolio/ConditionMobile";
-import NavigationMobile from "@/components/portfolio/NavigationMobile";
-import ProfileMobile from "@/components/portfolio/ProfileMobile";
 
 export const profiles = [
     {
