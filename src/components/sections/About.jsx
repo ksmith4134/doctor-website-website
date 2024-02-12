@@ -11,7 +11,7 @@ export default function About() {
             <h2 className='mt-4 md:mt-2 font-hind text-center text-gray-300/90 text-6xl font-semibold text-balance'>
                 Neither do we.
             </h2>
-            <div className='mt-16 max-w-4xl w-full flex flex-col sm:flex-row gap-4'>
+            <div className='mt-16 max-w-4xl w-full flex flex-col items-center md:flex-row gap-8 md:gap-4'>
                 {profiles.map((item) => (
                     <div key={item.id} className='relative w-80'>
                         <ProfileCard

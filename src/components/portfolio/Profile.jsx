@@ -38,7 +38,7 @@ const education = [
 
 export default function Profile() {
     return (
-        <div className='w-full h-full flex justify-between items-start gap-8'>
+        <div className='w-full h-full flex justify-between items-start gap-12'>
             <div className='relative basis-7/12 rounded-lg border border-cyan-700/0 bg-noise bg-repeat text-gray-300/90 overflow-hidden'>
                 <div className='p-12 bg-cyan-600/10'>
                     <h3 className='font-semibold text-2xl'>Credentials</h3>
@@ -64,8 +64,8 @@ export default function Profile() {
                     />
                 </div>
             </div>
-            <div className='pt-12 shrink-0'>
-                <h3 className='-ml-2 mb-10 font-semibold text-2xl text-gray-200'>
+            <div className='pt-12'>
+                <h3 className='mb-10 font-semibold text-2xl text-gray-200'>
                     Education
                 </h3>
                 {education.map((item) => (

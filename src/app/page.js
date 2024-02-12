@@ -9,12 +9,12 @@ import MaxWidth from "@/components/utils/MaxWidth";
 export default function Home() {
     return (
         <main>
-            <div id='hero' className='py-24 lg:pt-48 lg:pb-16'>
+            <div id='hero' className='pt-24 md:pt-36 lg:pt-48 pb-16'>
                 <MaxWidth>
                     <Hero />
                 </MaxWidth>
             </div>
-            <div id='horizontal-infinite-scroll' className='mb-16'>
+            <div id='horizontal-infinite-scroll' className='lg:mb-4'>
                 <InfiniteScrollBanner />
             </div>
             <div id='services'>

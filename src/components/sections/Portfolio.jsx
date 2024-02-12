@@ -3,7 +3,7 @@ import Gallery from "@/components/widgets/Gallery";
 export default function Portfolio() {
     return (
         <>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center mx-auto max-w-xl md:max-w-full md:w-full'>
                 <div className='flex flex-col items-center text-center'>
                     <h3 className='text-gray-500 text-lg'>Our Work</h3>
                     <h1 className='mt-4 font-hind text-6xl leading-tight text-gray-300/90'>

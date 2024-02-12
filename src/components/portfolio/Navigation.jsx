@@ -19,8 +19,8 @@ const circles = [
 export default function Navigation() {
 
     return (
-        <div className='w-full h-full flex justify-between items-start'>
-            <div className='w-80'>
+        <div className='w-full h-full flex justify-between gap-8 items-start'>
+            <div className='w-72 lg:w-80 shrink-0'>
                 {/* Instructions */}
                 <div className='flex items-center gap-2'>
                     <FaCircleInfo className='text-2xl text-gray-400' />
@@ -28,9 +28,8 @@ export default function Navigation() {
                         Instructions
                     </p>
                 </div>
-                <p className='mt-3 text-gray-300/90 text-xs font-extralight leading-relaxed text-balance'>
-                    Click on the highlighted skeleton joints, filter
-                    buttons, or dropdown menus to learn more about your
+                <p className='mt-3 text-gray-300/90 text-xs font-extralight leading-relaxed'>
+                    Click on the highlighted skeleton joints or dropdown menus to learn more about your
                     condition.
                 </p>
                 {/* Filter Buttons */}
@@ -69,7 +68,7 @@ export default function Navigation() {
                 {circles.map((item) => (
                     <button
                         key={item.id}
-                        className={`absolute z-10 h-20 w-20 rounded-full border-2 border-cyan-700/20 bg-cyan-700/30 shadow-inner shadow-cyan-700/40 ${item.position}`}
+                        className={`absolute z-10 h-16 lg:h-20 aspect-square rounded-full border-2 border-cyan-700/20 bg-cyan-700/50 shadow-inner shadow-cyan-700/40 ${item.position}`}
                     ></button>
                 ))}
             </div>

@@ -21,6 +21,16 @@ import { IoIosPerson } from "react-icons/io";
 import { GiStomach } from "react-icons/gi";
 import { BsBandaidFill } from "react-icons/bs";
 
+import { FiPenTool, FiCode, FiCamera, FiUser, FiFolder, FiPlay, FiMenu } from "react-icons/fi";
+import { FaCircleInfo, FaArrowRight } from "react-icons/fa6";
+import { IoAccessibilityOutline, IoSearchOutline } from "react-icons/io5";
+import { BsFileEarmarkPdf, BsArrowDownSquareFill } from "react-icons/bs";
+import { MdAddCircleOutline } from "react-icons/md";
+import { RiOpenaiFill } from "react-icons/ri";
+import ConditionMobile from "@/components/portfolio/ConditionMobile";
+import NavigationMobile from "@/components/portfolio/NavigationMobile";
+import ProfileMobile from "@/components/portfolio/ProfileMobile";
+
 export const profiles = [
     {
         id: 0,
@@ -90,27 +100,54 @@ export const portfolio = [
         id: 0,
         label: "Education",
         description: "View fully-customizable, wiki-style condition pages",
-        url: 'https://www.arnotortho.com/knee/knee-arthritis?index=Background',
-        component: () => <Condition />,
+        url: "https://www.arnotortho.com/knee/knee-arthritis?index=Background",
+        desktopComponent: () => <Condition />,
+        mobileComponent: () => <ConditionMobile />,
     },
     {
         id: 1,
         label: "Navigation",
-        description: "See how patients find condition information using an interactive skeleton",
-        url: 'https://www.arnotortho.com/#body-diagram',
-        component: () => <Navigation />,
+        description:
+            "See how patients find condition information using an interactive skeleton",
+        url: "https://www.arnotortho.com/#body-diagram",
+        desktopComponent: () => <Navigation />,
+        mobileComponent: () => <NavigationMobile />,
     },
     {
         id: 2,
         label: "Profiles",
-        description: "Check out beautiful and professional doctor profile pages",
-        url: 'https://www.arnotortho.com/team/bryan-jarvis',
-        component: () => <Profile />,
+        description:
+            "Check out beautiful and professional doctor profile pages",
+        url: "https://www.arnotortho.com/team/bryan-jarvis",
+        desktopComponent: () => <Profile />,
+        mobileComponent: () => <ProfileMobile />,
     },
 ];
 
+export const services = [
+    {
+        id: 0,
+        title: "Design & Development",
+        list: [
+            { id: 0, label: "Collaborative design process", body: "Leave feedback and comment on new designs in real-time. Get a picture-perfect site.", icon: FiPenTool },
+            { id: 1, label: "No vendor lock-in", body: "Each site is coded using popular programming languages & tools. You own everything.", icon: FiCode },
+            { id: 2, label: "Accessibility for all", body: "Accessibility to meet the needs of every demographic.", icon: IoAccessibilityOutline },
+        ],
+    },
+    {
+        id: 1,
+        title: "Content Management",
+        list: [
+            { id: 0, label: "Storyboard, capture, and edit", body: "We work with photographers and videographers to help deliver professional content.", icon: FiCamera },
+            { id: 1, label: "Patient education resources", body: "Create documentation for conditions, treatments, protocols, and more.", icon: FiUser },
+            { id: 2, label: "Quickly add content to your site", body: "A custom-tailored content dashboard makes it easy for anyone on your team to upload new content.", icon: FiFolder },
+        ],
+    },
+];
+
+
 // Not currently used
-const innovation = [
+const innovationOld = [
     {
         id: 0,
         title: "White Coat CMS",
@@ -123,7 +160,7 @@ const innovation = [
     },
 ];
 
-const services = [
+const servicesOld = [
     {
         id: 0,
         title: "Design",

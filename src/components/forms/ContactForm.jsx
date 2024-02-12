@@ -32,7 +32,7 @@ export default function ContactForm() {
             <form
                 action={formAction}
                 id='contact-form'
-                className='mt-4 flex gap-4 w-[400px] h-12'
+                className='mt-4 max-w-96 w-full h-12'
             >
                 <div className='p-1 bg-white/5 w-full h-full border border-gray-600/20 rounded-full flex justify-between items-center gap-2'>
                     <input
@@ -44,13 +44,18 @@ export default function ContactForm() {
                         placeholder={
                             disableForm
                                 ? "Disabled"
-                                : "Enter email and click contact"
+                                : "Enter your email and click"
                         }
                         autoComplete='off'
                         required
                         disabled={disableForm}
-                        className='w-full h-full px-4 bg-transparent text-sm text-gray-300/90 placeholder-gray-600 focus:outline-none focus:border-gray-600'
+                        className='w-full h-full px-4 bg-transparent text-sm text-gray-300/90 placeholder-gray-600 focus:outline-none focus:border-gray-600 text-center md:text-left'
                     ></input>
+                    <div className='hidden md:block h-full'>
+                        <SubmitButton disableForm={disableForm} />
+                    </div>
+                </div>
+                <div className='md:hidden w-full h-full mt-4'>
                     <SubmitButton disableForm={disableForm} />
                 </div>
             </form>

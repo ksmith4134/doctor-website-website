@@ -19,7 +19,7 @@ export default function ProfileCard(props) {
             <div className={`absolute w-full h-full top-0 bg-gradient-radial from-gray-400/20 ${gradient} to-transparent to-[90%]`}></div>
             <div className='p-2 w-full h-full bg-gray-600/10 group-hover:bg-gray-600/20'>
                 {/* IMAGE */}
-                <div className='z-10 relative w-full h-72'>
+                <div className='z-10 relative w-full h-72 md:h-48 lg:h-72'>
                     {profilePic ? 
                         <Image
                             alt={picAltText}

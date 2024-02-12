@@ -8,7 +8,7 @@ export function SubmitButton({ disableForm }) {
 
     if (disableForm)
         return (
-            <div className='w-fit h-full px-4 flex items-center gap-2 border border-gray-600/20 bg-gray-800 text-gray-300/90 text-sm rounded-full group hover:bg-gray-700 transition duration-300'>
+            <div className='w-full md:w-fit h-full px-4 flex items-center gap-2 border border-gray-600/20 bg-gray-800 text-gray-300/90 text-sm rounded-full group hover:bg-gray-700 transition duration-300'>
                 Contact
             </div>
         );
@@ -18,7 +18,7 @@ export function SubmitButton({ disableForm }) {
             type='submit'
             aria-disabled={pending}
             disabled={pending}
-            className='w-fit h-full px-4 flex items-center gap-2 border border-gray-600/20 bg-gray-800 text-gray-300/90 text-sm rounded-full group hover:bg-gray-700 transition duration-300'
+            className='w-full md:w-fit h-full px-4 flex justify-center items-center gap-2 border border-gray-600/20 bg-gray-800 text-gray-300/90 text-sm rounded-full group hover:bg-gray-700 transition duration-300'
         >
             {pending ? (
                 "Submitting..."
