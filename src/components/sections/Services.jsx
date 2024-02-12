@@ -59,7 +59,7 @@ const html = await codeToHtml(code, {
 
 function CodeBlockGraphic() {
     return (
-        <div className='w-80 sm:w-96 rounded-xl backdrop-blur-3xl bg-gradient-radial from-main-secondary/10 to-white/5 border border-white/5 shadow-lg shadow-gray-950/20'>
+        <div className='w-80 sm:w-96 rounded-xl backdrop-blur-3xl bg-gradient-radial from-main-secondary/10 to-white/5 border border-white/5 shadow-lg shadow-gray-950/20 overflow-hidden'>
             <div className='p-8 w-full h-full rounded-2xl bg-noise bg-repeat'>
                 <div
                     className='text-xs sm:text-sm'

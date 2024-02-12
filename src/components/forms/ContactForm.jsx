@@ -32,9 +32,9 @@ export default function ContactForm() {
             <form
                 action={formAction}
                 id='contact-form'
-                className='mt-4 max-w-96 w-full h-12'
+                className='mt-4 max-w-96 w-full'
             >
-                <div className='p-1 bg-white/5 w-full h-full border border-gray-600/20 rounded-full flex justify-between items-center gap-2'>
+                <div className='p-1 h-12 bg-white/5 w-full border border-gray-600/20 rounded-full flex justify-between items-center gap-2'>
                     <input
                         type='email'
                         id='email'
@@ -55,7 +55,7 @@ export default function ContactForm() {
                         <SubmitButton disableForm={disableForm} />
                     </div>
                 </div>
-                <div className='md:hidden w-full h-full mt-4'>
+                <div className='block md:hidden w-full h-12 mt-4'>
                     <SubmitButton disableForm={disableForm} />
                 </div>
             </form>
