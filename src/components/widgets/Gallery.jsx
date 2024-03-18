@@ -16,10 +16,10 @@ export default function Gallery() {
         let index;
         if (id === 0) {
             index = "-100%";
-        } else if (id === 2) {
-            index = "100%";
-        } else {
+        } else if (id === 1) {
             index = "0%";
+        } else {
+            index = "100%";
         }
 
         setSliderStyle({ transform: `translateX(${index})` });
@@ -42,7 +42,7 @@ export default function Gallery() {
                             </div>
                         ))}
                         <div
-                            className='absolute top-[3px] h-10 z-10 w-24 md:w-28 rounded-full backdrop-blur-lg bg-gradient-radial from-white/10 border border-white/5 transition-transform duration-500'
+                            className='absolute top-1 h-[39px] z-10 w-24 md:w-28 rounded-full backdrop-blur-lg bg-gradient-radial from-white/10 border border-white/5 transition-transform duration-500'
                             style={sliderStyle}
                         ></div>
                     </div>
