@@ -1,6 +1,5 @@
-import Link from "next/link";
 import MaxWidth from "../utils/MaxWidth";
-import { FaRegCopyright, FaEgg } from "react-icons/fa6";
+import { FaRegCopyright } from "react-icons/fa6";
 
 export default function Footer() {
 
@@ -22,9 +21,6 @@ export default function Footer() {
                             <li><Link href="/legal#terms-and-conditions">Terms & Conditions</Link></li>
                         </ul> */}
                     </div>
-                    <Link href={'/easteregg'}>
-                        <FaEgg className="mb-0.5 text-gray-700 text-4xl hover:text-gray-600" />
-                    </Link>
                 </div>
             </footer>
         </MaxWidth>

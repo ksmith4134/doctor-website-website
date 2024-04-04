@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { profiles } from "../../lib/cms";
 import ProfileCard from "@/components/widgets/ProfileCard";
 
@@ -14,13 +15,17 @@ export default function About() {
             <div className='mt-16 max-w-4xl w-full flex flex-col items-center md:flex-row gap-8 md:gap-4'>
                 {profiles.map((item) => (
                     <div key={item.id} className='relative w-80'>
-                        <ProfileCard
-                            profilePic={item.profilePic}
-                            name={item.name}
-                            title={item.title}
-                            picAltText={item.picAltText}
-                            gradientColor={item.gradientColor}
-                        />
+                        <Link href={item.url} scroll={item.url === '/' ? false : true}>
+                            <ProfileCard
+                                profilePic={item.profilePic}
+                                icon={item.icon}
+                                name={item.name}
+                                title={item.title}
+                                picAltText={item.picAltText}
+                                gradientColor={item.gradientColor}
+                                animate={item.animate}
+                            />
+                        </Link>
                     </div>
                 ))}
             </div>

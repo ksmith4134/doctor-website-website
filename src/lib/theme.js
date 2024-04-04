@@ -1,3 +1,5 @@
+import { PiEggCrack } from "react-icons/pi";
+
 export const FONT_COLORS = {
     success: "text-emerald-300",
     error: "text-red-400",
@@ -12,3 +14,7 @@ export const GRADIENT_COLORS = {
         red: "group-hover:from-red-600/60",
     },
 };
+
+export const ICONS = {
+    egg: PiEggCrack,
+}

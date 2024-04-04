@@ -14,22 +14,22 @@ export default function Header() {
                         </div>
                         <ul className="flex items-center gap-12 text-gray-300 text-sm">
                             <li className="hidden md:block">
-                                <Link href="#services">
+                                <Link href="/#services">
                                     <span>Services</span>
                                 </Link>
                             </li>
                             <li className="hidden md:block">
-                                <Link href="#work">
+                                <Link href="/#work">
                                     <span>Our Work</span>
                                 </Link>
                             </li>
                             <li className="hidden md:block">
-                                <Link href="#about">
+                                <Link href="/#about">
                                     <span>About</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#contact">
+                                <Link href="/#contact">
                                     <button className="px-5 py-2 rounded-full bg-gray-600/50 hover:bg-gray-600 transition duration-300 ease-in-out">Contact</button>
                                 </Link>
                             </li>

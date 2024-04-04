@@ -31,26 +31,35 @@ export const profiles = [
     {
         id: 0,
         profilePic: davidProfilePic,
+        icon: '',
         name: "David Smith",
         title: "Founder, Design Engineer",
         picAltText: "profile picture of company founder, David Smith",
         gradientColor: "teal",
+        url: '/',
+        animate: false,
     },
     {
         id: 1,
         profilePic: kevinProfilePic,
+        icon: '',
         name: "Kevin Smith",
         title: "Founder, Software Engineer",
         picAltText: "profile picture of company founder, Kevin Smith",
         gradientColor: "red",
+        url: '/',
+        animate: false,
     },
     {
         id: 2,
         profilePic: null,
+        icon: 'egg',
         name: "Dr. Doogie Howser",
         title: "Medical Advisor, Prodigy",
         picAltText: "profile picture of company medical advisor, Doogie Howser",
         gradientColor: "amber",
+        url: '/easteregg',
+        animate: true,
     },
 ];
 
@@ -94,20 +103,20 @@ export const conditionsGraphic = [
 export const portfolio = [
     {
         id: 0,
-        label: "Education",
-        description: "View fully-customizable, wiki-style condition pages",
-        url: "https://www.arnotortho.com/knee/knee-arthritis?index=Background",
-        desktopComponent: () => <Condition />,
-        mobileComponent: () => <ConditionMobile />,
-    },
-    {
-        id: 1,
         label: "Navigation",
         description:
             "See how patients find condition information using an interactive skeleton",
         url: "https://www.arnotortho.com/#body-diagram",
         desktopComponent: () => <Navigation />,
         mobileComponent: () => <NavigationMobile />,
+    },
+    {
+        id: 1,
+        label: "Education",
+        description: "View fully-customizable, wiki-style condition pages",
+        url: "https://www.arnotortho.com/knee/knee-arthritis?index=Background",
+        desktopComponent: () => <Condition />,
+        mobileComponent: () => <ConditionMobile />,
     },
     {
         id: 2,
